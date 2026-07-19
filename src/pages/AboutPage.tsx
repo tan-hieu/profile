@@ -27,12 +27,13 @@ const strengthIcons = {
 
 export function AboutPage() {
   const { t } = useTranslation("about");
+  const principleItems = ["clarity", "ownership", "growth"] as const;
 
   return (
     <>
       <Seo title={t("meta.title")} description={t("meta.description")} />
 
-      <Container className="py-16 sm:py-20">
+      <Container className="py-8 sm:py-10">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}
@@ -124,6 +125,40 @@ export function AboutPage() {
           </Reveal>
         </div>
 
+        <Reveal className="mt-16 rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-9">
+          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{t("principles.eyebrow")}</p>
+              <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">{t("principles.title")}</h2>
+              <p className="mt-4 text-[var(--text-secondary)]">{t("principles.description")}</p>
+            </div>
+            <div className="divide-y divide-[var(--border)]">
+              {principleItems.map((item, index) => (
+                <article key={item} className="grid gap-2 py-5 first:pt-0 last:pb-0 sm:grid-cols-[3rem_1fr]">
+                  <span className="font-mono text-sm text-[var(--primary)]">0{index + 1}</span>
+                  <div>
+                    <h3 className="font-display text-lg font-semibold">{t(`principles.${item}.title`)}</h3>
+                    <p className="mt-2 text-sm text-[var(--text-secondary)]">{t(`principles.${item}.body`)}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+
+        <Reveal className="mt-16">
+          <div className="grid min-w-0 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] lg:grid-cols-[0.9fr_1.1fr]">
+            <figure className="group min-w-0 overflow-hidden bg-[var(--surface-secondary)]">
+              <img src={profile.avatar} alt={t("gallery.learningAlt")} className="h-80 w-full object-contain p-10 transition-transform duration-500 group-hover:scale-[1.03] lg:h-full lg:min-h-[24rem]" loading="lazy" />
+            </figure>
+            <div className="flex min-w-0 flex-col justify-center p-7 sm:p-10">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{t("gallery.eyebrow")}</p>
+              <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">{t("gallery.learning")}</h2>
+              <p className="mt-4 text-[var(--text-secondary)]">{t("gallery.learningBody")}</p>
+            </div>
+          </div>
+        </Reveal>
+
         <Reveal className="mt-16">
           <h2 className="font-display text-2xl font-semibold sm:text-3xl">
             {t("timeline.title")}
@@ -147,6 +182,17 @@ export function AboutPage() {
               </li>
             ))}
           </ol>
+        </Reveal>
+
+        <Reveal className="mt-16 grid min-w-0 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="flex min-w-0 flex-col justify-center p-7 sm:p-10">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{t("gallery.projectEyebrow")}</p>
+            <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">{t("gallery.project")}</h2>
+            <p className="mt-4 text-[var(--text-secondary)]">{t("gallery.projectBody")}</p>
+          </div>
+          <figure className="group min-w-0 overflow-hidden bg-[var(--surface-secondary)]">
+            <img src={profile.avatar} alt={t("gallery.projectAlt")} className="h-80 w-full object-contain p-10 transition-transform duration-500 group-hover:scale-[1.03] lg:h-full lg:min-h-[24rem]" loading="lazy" />
+          </figure>
         </Reveal>
       </Container>
     </>

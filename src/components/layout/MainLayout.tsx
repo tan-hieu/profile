@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { Outlet } from "react-router-dom";
+import { useLocation, useOutlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -10,6 +10,8 @@ import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 export function MainLayout() {
   const { t } = useTranslation("common");
+  const location = useLocation();
+  const outlet = useOutlet();
   const { language, setLanguage } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -42,8 +44,8 @@ export function MainLayout() {
       <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
 
       <main id="main-content" className="flex-1">
-        <PageTransition>
-          <Outlet />
+        <PageTransition routeKey={location.pathname}>
+          {outlet}
         </PageTransition>
       </main>
 

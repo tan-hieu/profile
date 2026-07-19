@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "{{name}} | Fresher Backend Developer",
-    "description": "专注于遗留系统迁移、业务分析和现代平台交付的 Fresher Backend Developer。"
+    "title": "{{name}} | Backend Developer",
+    "description": "构建 Web 产品、API 和业务系统的 Backend Developer。"
   },
   "eyebrow": "Developer Journey",
   "greeting": "你好，我是",
-  "role": "Fresher Backend Developer",
+  "role": "Backend Developer",
   "intro": "我参与过旧系统向现代平台的迁移项目，专注于业务分析、代码转换，并确保新系统保持旧系统的行为一致。",
   "cta": {
     "projects": "查看项目",

@@ -86,7 +86,7 @@ export function ProjectDetailPage() {
 
       <section className="relative overflow-hidden border-b border-[var(--border)] bg-[var(--surface)]">
         <div className="bg-grid-subtle pointer-events-none absolute inset-0 opacity-50" />
-        <Container className="relative grid gap-8 py-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+        <Container className="relative grid gap-8 py-9 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <div className="flex flex-wrap gap-2">
               {project.category.map((category) => (

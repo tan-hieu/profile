@@ -34,6 +34,31 @@
     "validate": "Validate",
     "improve": "Improve"
   },
+  "capabilities": {
+    "eyebrow": "How I contribute",
+    "title": "From technical foundations to a complete product.",
+    "description": "Three areas I actively develop and have applied in real projects or personal products.",
+    "backend": { "title": "Backend & data", "body": "Design APIs, implement business logic, work with PostgreSQL, and organize code for testing, extension, and maintenance." },
+    "product": { "title": "Product thinking", "body": "View features across the user journey, connecting frontend, backend, payments, and content instead of treating an API in isolation." },
+    "delivery": { "title": "Delivery & validation", "body": "Validate outputs, handle webhooks and cloud flows, and compare behavior so products work correctly in real conditions." }
+  },
+  "story": {
+    "eyebrow": "The person behind the product",
+    "title": "Curious about the problem, deliberate about the details.",
+    "body": "I enjoy understanding how a system truly works, turning requirements into clear flows, and improving a product step by step. Every project expands my perspective across backend, frontend, data, and user experience.",
+    "action": "Read my story"
+  },
+  "gallery": {
+    "workspace": "My workspace",
+    "workspaceAlt": "Personal photo in the workspace",
+    "project": "A moment with a project",
+    "projectAlt": "Personal photo while working on a project"
+  },
+  "closing": {
+    "title": "Ready for the next challenge.",
+    "body": "I am looking to join a team where I can deepen my backend skills, contribute to real products, and learn from experienced engineers.",
+    "action": "Start a conversation"
+  },
   "featured": {
     "title": "Featured projects",
     "description": "A new full-stack product alongside system modernization work delivered in real project environments."

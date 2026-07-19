@@ -18,7 +18,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/handy-terminal.svg",
     featured: true,
-    order: 1,
+    order: 2,
     beforeAfter: {
       before: ["BHT Device", "BHT-OS", "BHT-BASIC"],
       migration: ["Business analysis", "Function conversion", "Device switch"],
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/jsp-csharp.svg",
     featured: true,
-    order: 2,
+    order: 3,
     beforeAfter: {
       before: ["Java", "JSP", "Business logic in legacy source"],
       migration: ["Logic analysis", "DB mapping", "Comparison testing"],
@@ -100,7 +100,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/learnova.svg",
     featured: true,
-    order: 3,
+    order: 1,
     beforeAfter: {
       before: ["Monolithic learning idea", "Direct video upload concept"],
       migration: ["HLS conversion", "Payment webhook", "Revenue logic"],

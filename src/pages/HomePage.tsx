@@ -19,6 +19,7 @@ export function HomePage() {
   const { t } = useTranslation(["home", "common", "projects"]);
   const prefersReducedMotion = useReducedMotion();
   const featured = getFeaturedProjects().slice(0, 3);
+  const capabilityItems = ["backend", "product", "delivery"] as const;
 
   return (
       <>
@@ -29,7 +30,7 @@ export function HomePage() {
           className="bg-grid-subtle pointer-events-none absolute inset-0 opacity-70"
           aria-hidden="true"
         />
-        <Container className="relative grid gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-24">
+        <Container className="relative grid gap-12 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:py-14">
           <motion.div
             initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -113,9 +114,53 @@ export function HomePage() {
           </div>
         </Reveal>
 
+        <Reveal className="mt-16">
+          <div className="max-w-2xl">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{t("home:capabilities.eyebrow")}</p>
+            <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">{t("home:capabilities.title")}</h2>
+            <p className="mt-3 text-[var(--text-secondary)]">{t("home:capabilities.description")}</p>
+          </div>
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            {capabilityItems.map((item, index) => (
+              <article key={item} className="relative overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-6">
+                <span className="font-mono text-xs text-[var(--primary)]">0{index + 1}</span>
+                <h3 className="mt-5 font-display text-xl font-semibold">{t(`home:capabilities.${item}.title`)}</h3>
+                <p className="mt-3 text-sm text-[var(--text-secondary)]">{t(`home:capabilities.${item}.body`)}</p>
+                <div className="absolute inset-x-0 bottom-0 h-px bg-[image:var(--gradient-primary)] opacity-70" />
+              </article>
+            ))}
+          </div>
+        </Reveal>
+
         <div className="mt-16">
           <MigrationJourneyTimeline />
         </div>
+
+        <Reveal className="mt-16 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)]">
+          <div className="grid min-w-0 lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="flex min-w-0 flex-col justify-center p-6 sm:p-9 lg:p-12">
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
+                {t("home:story.eyebrow")}
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">
+                {t("home:story.title")}
+              </h2>
+              <p className="mt-4 max-w-xl text-[var(--text-secondary)]">
+                {t("home:story.body")}
+              </p>
+              <Link to="/about" className="mt-6 inline-flex w-fit items-center gap-2 font-medium text-[var(--primary)] hover:text-[var(--primary-hover)]">
+                {t("home:story.action")}
+                <ArrowRight size={17} aria-hidden="true" />
+              </Link>
+            </div>
+            <div className="min-w-0 p-3">
+              <figure className="group relative min-w-0 overflow-hidden rounded-[var(--radius-md)] bg-[var(--surface-secondary)]">
+                <img src={profile.avatar} alt={t("home:gallery.workspaceAlt")} className="h-80 w-full object-contain p-8 transition-transform duration-500 group-hover:scale-[1.03] lg:h-[26rem]" loading="lazy" />
+                <figcaption className="absolute inset-x-3 bottom-3 rounded-lg bg-black/65 px-3 py-2 text-sm text-white backdrop-blur">{t("home:gallery.workspace")}</figcaption>
+              </figure>
+            </div>
+          </div>
+        </Reveal>
 
         <Reveal className="mt-16">
           <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -170,6 +215,20 @@ export function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </Reveal>
+
+        <Reveal className="mt-16 grid min-w-0 overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] lg:grid-cols-[1.1fr_0.9fr]">
+          <figure className="group min-w-0 overflow-hidden bg-[var(--surface-secondary)]">
+            <img src={profile.avatar} alt={t("home:gallery.projectAlt")} className="h-80 w-full object-contain p-10 transition-transform duration-500 group-hover:scale-[1.03] lg:h-full lg:min-h-[24rem]" loading="lazy" />
+          </figure>
+          <div className="flex min-w-0 flex-col justify-center p-7 sm:p-10">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--accent)]">{t("home:gallery.project")}</p>
+            <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">{t("home:closing.title")}</h2>
+            <p className="mt-4 text-[var(--text-secondary)]">{t("home:closing.body")}</p>
+            <Link to="/contact" className="mt-6 inline-flex w-fit items-center gap-2 font-medium text-[var(--primary)] hover:text-[var(--primary-hover)]">
+              {t("home:closing.action")}<ArrowRight size={17} aria-hidden="true" />
+            </Link>
           </div>
         </Reveal>
       </Container>

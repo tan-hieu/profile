@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Download, Menu, X } from "lucide-react";
@@ -26,6 +26,14 @@ const languageLabels: Record<SupportedLanguage, string> = {
   ko: "KO",
 };
 
+const languageNames: Record<SupportedLanguage, string> = {
+  vi: "Tiếng Việt",
+  en: "English",
+  ja: "日本語",
+  zh: "中文",
+  ko: "한국어",
+};
+
 export function Header({
   language,
   isMobileMenuOpen,
@@ -35,6 +43,8 @@ export function Header({
 }: HeaderProps) {
   const { t } = useTranslation("common");
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLanguageOpen, setIsLanguageOpen] = useState(false);
+  const languageMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const updateScrollState = () => {
@@ -45,6 +55,26 @@ export function Header({
     window.addEventListener("scroll", updateScrollState, { passive: true });
     return () => window.removeEventListener("scroll", updateScrollState);
   }, []);
+
+  useEffect(() => {
+    if (!isLanguageOpen) return;
+
+    const closeMenu = (event: MouseEvent) => {
+      if (!languageMenuRef.current?.contains(event.target as Node)) {
+        setIsLanguageOpen(false);
+      }
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsLanguageOpen(false);
+    };
+
+    document.addEventListener("mousedown", closeMenu);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("mousedown", closeMenu);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [isLanguageOpen]);
 
   return (
     <header
@@ -67,20 +97,48 @@ export function Header({
         <DesktopNavigation />
 
         <div className="flex items-center gap-1 sm:gap-2">
-          <label className="relative">
-            <span className="sr-only">{t("actions.changeLanguage")}</span>
-            <select
-              value={language}
-              onChange={(event) => onChangeLanguage(event.target.value as SupportedLanguage)}
-              className="h-10 cursor-pointer appearance-none rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] py-2 pl-3 pr-8 text-xs font-semibold text-[var(--text-primary)] transition-colors hover:border-[var(--primary)]"
+          <div ref={languageMenuRef} className="relative">
+            <button
+              type="button"
+              onClick={() => setIsLanguageOpen((open) => !open)}
+              className={cn(
+                "flex h-10 min-w-[4.5rem] items-center justify-between gap-3 rounded-[var(--radius-md)] border bg-[var(--surface)] px-3 text-sm font-semibold transition-colors",
+                isLanguageOpen ? "border-[var(--primary)] text-[var(--primary)]" : "border-[var(--border)] text-[var(--text-primary)] hover:border-[var(--primary)]",
+              )}
               aria-label={t("actions.changeLanguage")}
+              aria-haspopup="listbox"
+              aria-expanded={isLanguageOpen}
             >
-              {SUPPORTED_LANGUAGES.map((item) => (
-                <option key={item} value={item}>{languageLabels[item]}</option>
-              ))}
-            </select>
-            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-[var(--text-secondary)]">⌄</span>
-          </label>
+              <span>{languageLabels[language]}</span>
+              <span className={cn("text-[10px] text-[var(--text-secondary)] transition-transform", isLanguageOpen && "rotate-180")} aria-hidden="true">▼</span>
+            </button>
+
+            {isLanguageOpen && (
+              <div className="absolute right-0 top-[calc(100%+0.6rem)] z-[70] w-44 overflow-hidden rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] p-1.5 shadow-[0_18px_50px_rgba(0,0,0,0.5)]" role="listbox" aria-label={t("actions.changeLanguage")}>
+                {SUPPORTED_LANGUAGES.map((item) => (
+                  <button
+                    key={item}
+                    type="button"
+                    role="option"
+                    aria-selected={item === language}
+                    onClick={() => {
+                      onChangeLanguage(item);
+                      setIsLanguageOpen(false);
+                    }}
+                    className={cn(
+                      "flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-left text-sm transition-colors",
+                      item === language
+                        ? "bg-[color-mix(in_srgb,var(--primary)_14%,transparent)] text-[var(--primary)]"
+                        : "text-[var(--text-secondary)] hover:bg-[var(--surface-secondary)] hover:text-[var(--text-primary)]",
+                    )}
+                  >
+                    <span>{languageNames[item]}</span>
+                    <span className="font-mono text-xs opacity-70">{languageLabels[item]}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
 
           <a
             href={profile.resumeUrl}

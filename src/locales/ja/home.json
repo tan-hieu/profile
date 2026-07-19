@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "{{name}} | Fresher Backend Developer",
-    "description": "レガシーシステムのマイグレーション、業務分析、モダンプラットフォームへの移行を専門とする Fresher Backend Developer。"
+    "title": "{{name}} | Backend Developer",
+    "description": "Web 製品、API、業務システムを開発する Backend Developer。"
   },
   "eyebrow": "Developer Journey",
   "greeting": "こんにちは、私は",
-  "role": "Fresher Backend Developer",
+  "role": "Backend Developer",
   "intro": "旧システムからモダンプラットフォームへのマイグレーションプロジェクトに参画し、業務分析、コード変換、新システムが旧システムと同じ動作を維持することに注力してきました。",
   "cta": {
     "projects": "プロジェクトを見る",

@@ -20,7 +20,7 @@ export function SkillsPage() {
     <>
       <Seo title={t("meta.title")} description={t("meta.description")} />
 
-      <Container className="py-16 sm:py-20">
+      <Container className="py-8 sm:py-10">
         <SectionHeading
           eyebrow={t("eyebrow")}
           title={t("title")}

@@ -54,6 +54,24 @@
     "title": "Sở thích chuyên môn",
     "body": "Migration architecture, legacy code reading, API design, database mapping và xây dựng sản phẩm full-stack có luồng thanh toán và streaming thực tế."
   },
+  "principles": {
+    "eyebrow": "Nguyên tắc làm việc",
+    "title": "Cách tôi tiếp cận công việc mỗi ngày.",
+    "description": "Những nguyên tắc giúp tôi học nhanh hơn, phối hợp rõ ràng hơn và tạo ra kết quả có thể kiểm chứng.",
+    "clarity": { "title": "Làm rõ trước khi xây dựng", "body": "Xác định yêu cầu, dữ liệu vào/ra và trường hợp đặc biệt trước khi bắt đầu triển khai." },
+    "ownership": { "title": "Chịu trách nhiệm với đầu ra", "body": "Không dừng ở việc code chạy; tôi kiểm tra dữ liệu, hành vi và ghi chú những điểm cần người tiếp theo hiểu được." },
+    "growth": { "title": "Học qua phản hồi", "body": "Chủ động tiếp nhận review, xem lại cách giải quyết và biến kiến thức mới thành cải tiến trong lần làm việc tiếp theo." }
+  },
+  "gallery": {
+    "eyebrow": "Phát triển chuyên môn",
+    "learning": "Học tập gắn liền với thực hành",
+    "learningBody": "Tôi củng cố kiến thức bằng cách đưa công nghệ vào dự án cụ thể, kiểm tra kết quả và ghi lại những điều đã học. Cách tiếp cận này giúp kiến thức không dừng ở lý thuyết.",
+    "learningAlt": "Ảnh cá nhân khi học tập hoặc làm việc",
+    "projectEyebrow": "Trong quá trình làm dự án",
+    "project": "Làm việc có hệ thống và trách nhiệm",
+    "projectBody": "Khi tham gia dự án, tôi ưu tiên hiểu đúng phạm vi, chia nhỏ vấn đề, trao đổi rõ ràng và kiểm chứng đầu ra trước khi hoàn thành công việc.",
+    "projectAlt": "Ảnh chuyên nghiệp của Đoàn Tấn Hiếu trong quá trình làm dự án"
+  },
   "timeline": {
     "title": "Timeline học tập & thực tập",
     "study": {

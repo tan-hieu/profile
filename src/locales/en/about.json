@@ -54,6 +54,24 @@
     "title": "Professional interests",
     "body": "Migration architecture, legacy code reading, API design, database mapping, and building full-stack products with real payment and streaming flows."
   },
+  "principles": {
+    "eyebrow": "Working principles",
+    "title": "How I approach work every day.",
+    "description": "Principles that help me learn faster, collaborate clearly, and produce verifiable outcomes.",
+    "clarity": { "title": "Clarify before building", "body": "Define requirements, inputs, outputs, and edge cases before implementation begins." },
+    "ownership": { "title": "Own the outcome", "body": "I do not stop when code runs; I verify data and behavior and document what the next person needs to understand." },
+    "growth": { "title": "Learn through feedback", "body": "Actively use reviews, revisit solutions, and turn new knowledge into improvements in the next iteration." }
+  },
+  "gallery": {
+    "eyebrow": "Professional growth",
+    "learning": "Learning through practice",
+    "learningBody": "I strengthen knowledge by applying technology to concrete projects, validating results, and documenting what I learn. This keeps learning connected to real outcomes.",
+    "learningAlt": "Personal photo while learning or working",
+    "projectEyebrow": "During project work",
+    "project": "A systematic and responsible approach",
+    "projectBody": "When contributing to a project, I focus on understanding scope, breaking down problems, communicating clearly, and validating outputs before considering work complete.",
+    "projectAlt": "Professional photo of Đoàn Tấn Hiếu during project work"
+  },
   "timeline": {
     "title": "Education & internship timeline",
     "study": {
