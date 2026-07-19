@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "Giới thiệu | {{name}}",
+    "description": "Backend Developer với kinh nghiệm migration hệ thống legacy, phân tích nghiệp vụ và làm việc đa nền tảng tại GOLINE GLOBAL và RIKAI TECHNOLOGY."
+  },
+  "eyebrow": "About Me",
+  "title": "Giới thiệu bản thân",
+  "intro": "Tôi là Backend Developer định hướng xây dựng nền tảng backend vững chắc thông qua các dự án migration thực tế. Thay vì chỉ viết code mới, tôi thường bắt đầu bằng việc đọc source cũ, đối chiếu luồng nghiệp vụ và đảm bảo hệ thống sau migration hoạt động giống hệ thống trước đó.",
+  "education": {
+    "title": "Quá trình học tập",
+    "body": "Nền tảng CNTT tập trung vào lập trình hướng đối tượng, cơ sở dữ liệu và phát triển web. Trong quá trình học, tôi bổ sung kinh nghiệm thực tế qua thực tập backend và các dự án cá nhân như LearnOva Online Learning Platform."
+  },
+  "direction": {
+    "title": "Định hướng nghề nghiệp",
+    "body": "Phát triển sự nghiệp theo hướng Backend Developer với thế mạnh migration hệ thống, phân tích nghiệp vụ và tích hợp API. Mục tiêu ngắn hạn là tham gia các dự án chuyển đổi legacy sang .NET/Java hiện đại; dài hạn là trở thành kỹ sư hiểu sâu cả luồng nghiệp vụ lẫn kiến trúc hệ thống."
+  },
+  "strengths": {
+    "title": "Điểm mạnh",
+    "description": "Các điểm mạnh được hình thành từ công việc migration và thực tập — không phải mô tả chung chung.",
+    "legacy": {
+      "title": "Đọc và hiểu source legacy",
+      "body": "Có thể đọc source BHT-BASIC, JSP và VB.NET để truy vết luồng xử lý, điều kiện phân nhánh và điểm giao tiếp với server trước khi viết code mới."
+    },
+    "business": {
+      "title": "Phân tích luồng nghiệp vụ",
+      "body": "Đối chiếu tài liệu BA, màn hình cũ và logic trong source để xác định input/output, quyền truy cập và các trường hợp đặc biệt trước khi migration."
+    },
+    "multitech": {
+      "title": "Làm việc đa công nghệ",
+      "body": "Chuyển đổi linh hoạt giữa Android, VB.NET, Java/JSP, C#/.NET, PostgreSQL và Spring Boot tùy từng phạm vi dự án."
+    },
+    "verification": {
+      "title": "Kiểm tra dữ liệu và logic",
+      "body": "So sánh kết quả query, file Excel xuất ra và hành vi popup/lỗi giữa hệ thống cũ và mới để phát hiện sai lệch sớm."
+    },
+    "learning": {
+      "title": "Học công nghệ mới nhanh",
+      "body": "Tự học HLS streaming, AWS CloudFront, PayOS webhook và các stack mới khi dự án hoặc dự án cá nhân yêu cầu."
+    },
+    "migration": {
+      "title": "Giữ đúng nghiệp vụ khi migration",
+      "body": "Ưu tiên hành vi nghiệp vụ và dữ liệu đầu ra đúng hơn việc chỉ chuyển syntax — đặc biệt với báo cáo Excel và luồng thiết bị Handy."
+    }
+  },
+  "workStyle": {
+    "title": "Phong cách làm việc",
+    "body": "Bắt đầu bằng hiểu bài toán và luồng nghiệp vụ, sau đó mới code. Ghi chú lại điểm khác biệt giữa logic cũ/mới, cập nhật tài liệu kỹ thuật và phối hợp kiểm thử sau migration."
+  },
+  "interests": {
+    "title": "Sở thích chuyên môn",
+    "body": "Migration architecture, legacy code reading, API design, database mapping và xây dựng sản phẩm full-stack có luồng thanh toán và streaming thực tế."
+  },
+  "timeline": {
+    "title": "Timeline học tập & thực tập",
+    "study": {
+      "period": "Đại học",
+      "title": "Nền tảng CNTT & lập trình",
+      "body": "Học lập trình, cơ sở dữ liệu, phát triển web và hoàn thiện các dự án học tập, đồ án cá nhân."
+    },
+    "goline": {
+      "period": "Thực tập",
+      "title": "GOLINE GLOBAL — Backend Developer DEV",
+      "body": "Tham gia Handy Terminal System Migration và Legacy JSP to C# WMS Migration: đọc source cũ, phân tích nghiệp vụ, hỗ trợ chuyển đổi chức năng và kiểm tra dữ liệu."
+    },
+    "rikai": {
+      "period": "Thực tập",
+      "title": "RIKAI TECHNOLOGY — Backend Developer DEV",
+      "body": "Thực tập backend với Java/Spring Boot: học cấu trúc dự án, viết API, làm việc với database và tài liệu kỹ thuật."
+    },
+    "personal": {
+      "period": "Liên tục",
+      "title": "Dự án cá nhân",
+      "body": "Xây dựng LearnOva Online Learning Platform và portfolio Developer Journey để thực hành full-stack, HLS, thanh toán và triển khai cloud."
+    }
+  }
+}

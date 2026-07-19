@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "经历 | {{name}}",
+    "description": "在 GOLINE GLOBAL 与 RIKAI TECHNOLOGY 的后端实习经历，聚焦遗留迁移与 API 开发。"
+  },
+  "eyebrow": "Experience",
+  "title": "工作经历",
+  "description": "展示具体工作的实习时间线 — 从遗留源码阅读、业务分析到迁移支持与上线后验证。",
+  "items": {
+    "goline": {
+      "summary": "在 GOLINE GLOBAL 参与两个迁移项目：了解旧系统、阅读 BA 文档、分析源码、对比新旧逻辑、支持功能迁移、验证数据与输出、使用 C#/VB.NET/Java/JSP/PostgreSQL、编写技术文档、支持迁移后缺陷处理。",
+      "r1": "研究遗留系统（BHT-BASIC、JSP）及现有服务器/数据库架构。",
+      "r2": "阅读并对照 BA 文档与旧界面实际行为。",
+      "r3": "分析现有源码以确定处理流程、条件与集成点。",
+      "r4": "在功能转换前后对比新旧系统逻辑。",
+      "r5": "在负责范围内支持向 Android、VB.NET、C#/.NET 的功能迁移。",
+      "r6": "验证 PostgreSQL 查询与 Excel 报表（.xlsx）输出。",
+      "r7": "编写或更新技术文档与逻辑差异记录。",
+      "r8": "支持在 Keyence BT-A1000 设备上的迁移后测试。"
+    },
+    "rikai": {
+      "summary": "在 RIKAI TECHNOLOGY 进行 Java/Spring Boot 后端实习：学习项目结构、参与 API 开发、数据库查询、文档与团队协作流程。",
+      "r1": "熟悉 Spring Boot 的 controller/service/repository 分层结构。",
+      "r2": "在导师指导下支持 REST API 的开发与修改。",
+      "r3": "编写与测试 SQL 查询、实体映射及基本数据处理。",
+      "r4": "使用 Git/GitHub 管理分支、提交与内部代码评审。",
+      "r5": "用 Postman 测试 API 并记录简单测试用例。",
+      "r6": "更新已完成功能的技术文档与接口说明。"
+    }
+  },
+  "presentLabel": "至今 / 已完成"
+}

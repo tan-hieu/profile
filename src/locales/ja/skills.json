@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "スキル | {{name}}",
+    "description": "実プロジェクトと個人開発を通じて培ったプログラミング、バックエンド、データベース、クラウド、マイグレーションスキル。"
+  },
+  "eyebrow": "Technical Skills",
+  "title": "専門スキル",
+  "description": "領域と実務レベルでグループ化 — 恣意的なパーセンテージではなく、プロジェクトに基づく経験を表示します。",
+  "levels": {
+    "project": "プロジェクトで使用",
+    "practical": "実務経験あり",
+    "learning": "学習・成長中"
+  },
+  "categories": {
+    "language": "プログラミング言語",
+    "frontend": "フロントエンド",
+    "backend": "バックエンド",
+    "database": "データベース",
+    "cloud": "クラウド・インフラ",
+    "tool": "ツール",
+    "business": "業務スキル"
+  },
+  "map": {
+    "title": "旅に沿ったスキルマップ",
+    "description": "JSP/BHT-BASIC ソースの読解から Spring Boot API、AWS 上の HLS 配信まで — 各スキルグループはポートフォリオ内の具体的なプロジェクトに紐づいています。"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "기술 | {{name}}",
+    "description": "실제 프로젝트와 개인 개발을 통해 쌓은 프로그래밍, 백엔드, 데이터베이스, 클라우드, 마이그레이션 스킬."
+  },
+  "eyebrow": "Technical Skills",
+  "title": "전문 기술",
+  "description": "영역과 실무 수준별로 그룹화 — 임의의 퍼센트가 아닌 프로젝트 기반 경험을 표시합니다.",
+  "levels": {
+    "project": "프로젝트에서 사용",
+    "practical": "실무 경험",
+    "learning": "학습 및 성장 중"
+  },
+  "categories": {
+    "language": "프로그래밍 언어",
+    "frontend": "프론트엔드",
+    "backend": "백엔드",
+    "database": "데이터베이스",
+    "cloud": "클라우드 및 인프라",
+    "tool": "도구",
+    "business": "업무 스킬"
+  },
+  "map": {
+    "title": "여정에 따른 스킬 맵",
+    "description": "JSP/BHT-BASIC 소스 읽기부터 Spring Boot API, AWS HLS 배포까지 — 각 스킬 그룹은 포트폴리오의 구체적 프로젝트와 연결됩니다."
+  }
+}

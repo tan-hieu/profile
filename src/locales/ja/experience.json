@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "経歴 | {{name}}",
+    "description": "GOLINE GLOBAL と RIKAI TECHNOLOGY でのバックエンドインターン — レガシーマイグレーションと API 開発。"
+  },
+  "eyebrow": "Experience",
+  "title": "職務経歴",
+  "description": "レガシー読解、業務分析、マイグレーション支援、デプロイ後検証まで — 具体的な業務内容を示すインターンタイムライン。",
+  "items": {
+    "goline": {
+      "summary": "GOLINE GLOBAL で2つのマイグレーションプロジェクトに参画：旧システム調査、BA資料読解、ソース分析、新旧ロジック比較、機能移行支援、データ・出力検証、C#/VB.NET/Java/JSP/PostgreSQL 作業、技術文書作成、マイグレーション後の不具合対応支援。",
+      "r1": "レガシーシステム（BHT-BASIC、JSP）と既存サーバー/DBアーキテクチャの調査。",
+      "r2": "BA資料と旧画面の実際の挙動の照合。",
+      "r3": "現行ソースコードから処理フロー、条件、連携ポイントの分析。",
+      "r4": "機能変換前後の新旧システム間ロジック比較。",
+      "r5": "担当範囲内で Android、VB.NET、C#/.NET への機能移行支援。",
+      "r6": "PostgreSQL クエリと Excel レポート（.xlsx）出力の検証。",
+      "r7": "技術文書およびロジック差異メモの作成・更新。",
+      "r8": "Keyence BT-A1000 端末でのマイグレーション後テスト支援。"
+    },
+    "rikai": {
+      "summary": "RIKAI TECHNOLOGY で Java/Spring Boot バックエンドインターン：プロジェクト構造の習得、API開発支援、DBクエリ、文書作成、チームワークフロー。",
+      "r1": "Spring Boot の controller/service/repository レイヤ構造の習得。",
+      "r2": "メンター指導のもと REST API の開発・更新支援。",
+      "r3": "SQL クエリ作成、エンティティマッピング、基本データ処理。",
+      "r4": "Git/GitHub によるブランチ管理、コミット、社内コードレビュー。",
+      "r5": "Postman による API テストと簡易テストケース記録。",
+      "r6": "完了機能の技術文書とエンドポイントメモの更新。"
+    }
+  },
+  "presentLabel": "現在 / 完了"
+}

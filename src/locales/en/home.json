@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "{{name}} | Fresher Backend Developer",
+    "description": "Fresher Backend Developer focused on legacy system migration, business analysis, and delivery on modern platforms."
+  },
+  "eyebrow": "Developer Journey",
+  "greeting": "Hello, I am",
+  "role": "Fresher Backend Developer",
+  "intro": "I have hands-on experience in legacy-to-modern system migration projects, focusing on business analysis, code conversion, and ensuring the new system preserves the behavior of the old one.",
+  "cta": {
+    "projects": "View Projects",
+    "cv": "Download CV"
+  },
+  "stats": {
+    "migrations": {
+      "value": "2",
+      "label": "System migration projects"
+    },
+    "personal": {
+      "value": "3+",
+      "label": "Personal & portfolio projects"
+    },
+    "platforms": {
+      "value": "6+",
+      "label": "Platforms & stacks worked with"
+    }
+  },
+  "journey": {
+    "title": "Migration journey",
+    "description": "From reading legacy source and analyzing business flows to implementing and validating the new system.",
+    "legacy": "Legacy System",
+    "analysis": "Business Analysis",
+    "migration": "Code Migration",
+    "testing": "Testing",
+    "modern": "Modern Platform"
+  },
+  "featured": {
+    "title": "Featured projects",
+    "description": "Two real migration projects at GOLINE GLOBAL and the personal project LearnOva Online Learning Platform."
+  },
+  "tech": {
+    "title": "Featured technologies"
+  },
+  "terminal": {
+    "title": "terminal — intro",
+    "line1": "$ whoami",
+    "line2": "$ focus — legacy → analysis → migration → modern",
+    "line3": "$ status — migration-first developer journey"
+  },
+  "nextHint": "Next: About me and career direction"
+}

@@ -1,0 +1,89 @@
+:root {
+  /* Background */
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-secondary: #eef2f7;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+
+  /* Brand Colors */
+  --primary: #1e3a8a;
+  --primary-hover: #172554;
+
+  --accent: #eab308;
+  --accent-hover: #ca8a04;
+
+  /* UI */
+  --border: #dbe3ee;
+  --success: #15803d;
+  --warning: #f59e0b;
+  --error: #dc2626;
+  --info: #2563eb;
+
+  /* Extra */
+  --shadow: rgba(15, 23, 42, 0.08);
+  --overlay: rgba(15, 23, 42, 0.6);
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #2563eb 55%,
+    #eab308 100%
+  );
+
+  --gradient-accent: linear-gradient(135deg, #eab308 0%, #facc15 100%);
+
+  /* Typography */
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Layout */
+  --header-height: 4.25rem;
+  --container-max: 72rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+}
+
+[data-theme="dark"] {
+  /* Background */
+  --background: #0b1120;
+  --surface: #111827;
+  --surface-secondary: #1e293b;
+
+  /* Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+
+  /* Brand Colors */
+  --primary: #60a5fa;
+  --primary-hover: #93c5fd;
+
+  --accent: #facc15;
+  --accent-hover: #fde047;
+
+  /* UI */
+  --border: #334155;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --error: #f87171;
+  --info: #38bdf8;
+
+  /* Extra */
+  --shadow: rgba(0, 0, 0, 0.35);
+  --overlay: rgba(0, 0, 0, 0.75);
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #1e40af 0%,
+    #60a5fa 60%,
+    #facc15 100%
+  );
+
+  --gradient-accent: linear-gradient(135deg, #facc15 0%, #fde047 100%);
+}

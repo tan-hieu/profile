@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "Contact | {{name}}",
+    "description": "Get in touch about internship opportunities, Fresher Backend Developer roles, or system migration projects."
+  },
+  "eyebrow": "Get in Touch",
+  "title": "Contact",
+  "description": "If you are interested in migration experience, backend development, or want to discuss a project, send a message or connect through the channels below.",
+  "info": {
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "Location",
+    "phone": "Phone"
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "your-email@example.com",
+    "subjectPlaceholder": "Subject of your message",
+    "messagePlaceholder": "Your message…",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Your message has been sent. Thank you for reaching out!",
+    "error": "Unable to send your message. Please try again later.",
+    "errors": {
+      "required": "This field is required",
+      "emailInvalid": "Please enter a valid email address"
+    }
+  },
+  "cv": {
+    "title": "Download CV",
+    "description": "Download my CV for a summary of migration experience, skills, and projects.",
+    "button": "Download CV"
+  }
+}

@@ -1,0 +1,50 @@
+import type { Experience } from "@/types/experience";
+
+export const experiences: Experience[] = [
+  {
+    id: "goline",
+    company: "GOLINE GLOBAL",
+    role: "Backend Developer DEV",
+    startDate: "Internship",
+    endDate: "Completed",
+    location: "Vietnam",
+    responsibilityKeys: [
+      "items.goline.r1",
+      "items.goline.r2",
+      "items.goline.r3",
+      "items.goline.r4",
+      "items.goline.r5",
+      "items.goline.r6",
+      "items.goline.r7",
+      "items.goline.r8",
+    ],
+    technologies: [
+      "C#",
+      ".NET",
+      "VB.NET",
+      "Java",
+      "JSP",
+      "Android",
+      "PostgreSQL",
+      "SQL",
+      "Git",
+    ],
+  },
+  {
+    id: "rikai",
+    company: "RIKAI TECHNOLOGY",
+    role: "Backend Developer DEV",
+    startDate: "Internship",
+    endDate: "Completed",
+    location: "Vietnam",
+    responsibilityKeys: [
+      "items.rikai.r1",
+      "items.rikai.r2",
+      "items.rikai.r3",
+      "items.rikai.r4",
+      "items.rikai.r5",
+      "items.rikai.r6",
+    ],
+    technologies: ["Java", "Spring Boot", "SQL", "Git", "REST API"],
+  },
+];

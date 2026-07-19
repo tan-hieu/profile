@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Experience | {{name}}",
+    "description": "Backend internship experience at GOLINE GLOBAL and RIKAI TECHNOLOGY, focused on legacy migration and API development."
+  },
+  "eyebrow": "Experience",
+  "title": "Work experience",
+  "description": "An internship timeline showing concrete work — from legacy source reading and business analysis to migration support and post-deployment verification.",
+  "items": {
+    "goline": {
+      "summary": "Contributed to two migration projects at GOLINE GLOBAL: understanding legacy systems, reading BA documents, analyzing source code, comparing old/new logic, supporting feature migration, verifying data and outputs, working with C#/VB.NET/Java/JSP/PostgreSQL, writing technical documentation, and supporting post-migration bug fixes.",
+      "r1": "Studied legacy systems (BHT-BASIC, JSP) and existing server/database architecture.",
+      "r2": "Read and cross-checked BA documentation against actual behavior on legacy screens.",
+      "r3": "Analyzed current source code to identify processing flows, conditions, and integration points.",
+      "r4": "Compared logic between old and new systems before and after feature conversion.",
+      "r5": "Supported feature migration to Android, VB.NET, and C#/.NET within assigned scope.",
+      "r6": "Verified data, PostgreSQL queries, and Excel report (.xlsx) output.",
+      "r7": "Wrote or updated technical documentation and logic difference notes.",
+      "r8": "Supported post-migration testing and verification on Keyence BT-A1000 devices."
+    },
+    "rikai": {
+      "summary": "Backend internship at RIKAI TECHNOLOGY with Java/Spring Boot: learning project structure, contributing to API development, database queries, documentation, and team workflow.",
+      "r1": "Learned Spring Boot project structure across controller/service/repository layers.",
+      "r2": "Supported development and updates to REST APIs under mentor guidance.",
+      "r3": "Wrote and tested SQL queries, entity mapping, and basic data handling.",
+      "r4": "Used Git/GitHub for branch management, commits, and internal code review.",
+      "r5": "Tested APIs with Postman and recorded simple test cases.",
+      "r6": "Updated technical documentation and endpoint notes for completed features."
+    }
+  },
+  "presentLabel": "Present / Completed"
+}

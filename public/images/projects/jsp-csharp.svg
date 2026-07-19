@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" rx="24" fill="#0f172a"/>
+  <rect x="24" y="24" width="752" height="452" rx="18" fill="#111827" stroke="#334155"/>
+
+  <text x="48" y="64" fill="#facc15" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Legacy JSP ? C# WMS Migration</text>
+  <text x="48" y="92" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="13">Before / Migration / After</text>
+
+  <!-- Before -->
+  <rect x="48" y="130" width="200" height="220" rx="14" fill="#1e293b" stroke="#334155"/>
+  <text x="68" y="162" fill="#60a5fa" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">BEFORE</text>
+  <text x="68" y="198" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Java</text>
+  <text x="68" y="228" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">JSP</text>
+  <text x="68" y="258" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Legacy business logic</text>
+  <text x="68" y="288" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">PostgreSQL</text>
+  <text x="68" y="318" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="12">Excel templates</text>
+
+  <!-- Migration -->
+  <rect x="300" y="130" width="200" height="220" rx="14" fill="#1e3a8a" stroke="#2563eb"/>
+  <text x="320" y="162" fill="#facc15" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">MIGRATION</text>
+  <text x="320" y="198" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="13">Logic analysis</text>
+  <text x="320" y="228" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="13">DB mapping</text>
+  <text x="320" y="258" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="13">C# implementation</text>
+  <text x="320" y="288" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="13">Comparison testing</text>
+  <text x="320" y="318" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="12">Excel verify</text>
+
+  <!-- After -->
+  <rect x="552" y="130" width="200" height="220" rx="14" fill="#1e293b" stroke="#eab308"/>
+  <text x="572" y="162" fill="#eab308" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">AFTER</text>
+  <text x="572" y="198" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">C# / .NET</text>
+  <text x="572" y="228" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">App + Infrastructure</text>
+  <text x="572" y="258" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">PostgreSQL</text>
+  <text x="572" y="288" fill="#e2e8f0" font-family="Segoe UI, Arial, sans-serif" font-size="13">Excel .xlsx output</text>
+  <text x="572" y="318" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="12">??????</text>
+
+  <path d="M258 240 H290" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M510 240 H542" stroke="#facc15" stroke-width="2"/>
+
+  <text x="48" y="400" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="12">Problem ? Analysis ? Solution ? Result ? Learning</text>
+  <text x="48" y="430" fill="#64748b" font-family="Segoe UI, Arial, sans-serif" font-size="12">Keep business behavior identical after stack change</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+</svg>

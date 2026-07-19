@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "联系 | {{name}}",
+    "description": "关于实习机会、Fresher Backend Developer 或系统迁移项目的联系。"
+  },
+  "eyebrow": "Get in Touch",
+  "title": "联系我",
+  "description": "如果您对迁移经验、后端开发或项目合作感兴趣，请发送消息或通过下方渠道联系。",
+  "info": {
+    "email": "邮箱",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "所在地",
+    "phone": "电话"
+  },
+  "form": {
+    "name": "姓名",
+    "email": "邮箱",
+    "subject": "主题",
+    "message": "内容",
+    "namePlaceholder": "请输入姓名",
+    "emailPlaceholder": "your-email@example.com",
+    "subjectPlaceholder": "消息主题",
+    "messagePlaceholder": "消息内容…",
+    "submit": "发送消息",
+    "sending": "发送中…",
+    "success": "消息已发送，感谢您的联系！",
+    "error": "发送失败，请稍后重试。",
+    "errors": {
+      "required": "此字段为必填",
+      "emailInvalid": "请输入有效的邮箱地址"
+    }
+  },
+  "cv": {
+    "title": "下载简历",
+    "description": "下载简历以了解迁移经验、技能与项目概况。",
+    "button": "下载简历"
+  }
+}

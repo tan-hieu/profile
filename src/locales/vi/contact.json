@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "Liên hệ | {{name}}",
+    "description": "Liên hệ về cơ hội thực tập, Fresher Backend Developer hoặc các dự án migration hệ thống."
+  },
+  "eyebrow": "Get in Touch",
+  "title": "Liên hệ",
+  "description": "Nếu bạn quan tâm đến kinh nghiệm migration, backend development hoặc muốn trao đổi về dự án, hãy gửi tin nhắn hoặc kết nối qua các kênh bên dưới.",
+  "info": {
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "Địa điểm",
+    "phone": "Điện thoại"
+  },
+  "form": {
+    "name": "Họ tên",
+    "email": "Email",
+    "subject": "Chủ đề",
+    "message": "Nội dung",
+    "namePlaceholder": "Nhập họ tên của bạn",
+    "emailPlaceholder": "your-email@example.com",
+    "subjectPlaceholder": "Chủ đề trao đổi",
+    "messagePlaceholder": "Nội dung tin nhắn…",
+    "submit": "Gửi tin nhắn",
+    "sending": "Đang gửi…",
+    "success": "Tin nhắn đã được gửi. Cảm ơn bạn đã liên hệ!",
+    "error": "Không thể gửi tin nhắn. Vui lòng thử lại sau.",
+    "errors": {
+      "required": "Trường này là bắt buộc",
+      "emailInvalid": "Email không hợp lệ"
+    }
+  },
+  "cv": {
+    "title": "Tải CV",
+    "description": "Tải CV để xem tóm tắt kinh nghiệm migration, kỹ năng và các dự án đã tham gia.",
+    "button": "Tải CV"
+  }
+}

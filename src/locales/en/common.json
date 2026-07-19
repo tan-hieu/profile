@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "actions": {
+    "viewProjects": "View Projects",
+    "downloadCv": "Download CV",
+    "contactMe": "Contact Me",
+    "viewDetails": "View Details",
+    "previous": "Previous",
+    "next": "Next",
+    "send": "Send Message",
+    "sending": "Sending…",
+    "backHome": "Back to Home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "changeLanguage": "Change language",
+    "toggleTheme": "Toggle theme",
+    "allFilters": "All"
+  },
+  "footer": {
+    "journey": "Developer Journey — from legacy systems to modern platforms",
+    "rights": "© {{year}} {{name}}. All rights reserved."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "loading": "Loading…",
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved. Return home to continue exploring the migration journey."
+  },
+  "pageNav": {
+    "previous": "Previous page",
+    "next": "Next page",
+    "keyboardHint": "Use ← → keys to navigate pages"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  }
+}

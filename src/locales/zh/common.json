@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于",
+    "skills": "技能",
+    "experience": "经历",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "actions": {
+    "viewProjects": "查看项目",
+    "downloadCv": "下载简历",
+    "contactMe": "联系我",
+    "viewDetails": "查看详情",
+    "previous": "上一页",
+    "next": "下一页",
+    "send": "发送",
+    "sending": "发送中…",
+    "backHome": "返回首页",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "changeLanguage": "切换语言",
+    "toggleTheme": "切换主题",
+    "allFilters": "全部"
+  },
+  "footer": {
+    "journey": "Developer Journey — 从遗留系统到现代平台",
+    "rights": "© {{year}} {{name}}. 保留所有权利。"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色"
+  },
+  "loading": "加载中…",
+  "notFound": {
+    "title": "页面未找到",
+    "description": "您访问的页面不存在或已移动。返回首页继续探索迁移之旅。"
+  },
+  "pageNav": {
+    "previous": "上一页",
+    "next": "下一页",
+    "keyboardHint": "使用 ← → 键切换页面"
+  },
+  "a11y": {
+    "skipToContent": "跳到主要内容"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "お問い合わせ | {{name}}",
+    "description": "インターンシップ、Fresher Backend Developer、システムマイグレーションに関するお問い合わせ。"
+  },
+  "eyebrow": "Get in Touch",
+  "title": "お問い合わせ",
+  "description": "マイグレーション経験、バックエンド開発、プロジェクトについてご興味があれば、メッセージを送るか下記のチャネルからご連絡ください。",
+  "info": {
+    "email": "メール",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "所在地",
+    "phone": "電話"
+  },
+  "form": {
+    "name": "氏名",
+    "email": "メール",
+    "subject": "件名",
+    "message": "メッセージ",
+    "namePlaceholder": "お名前を入力",
+    "emailPlaceholder": "your-email@example.com",
+    "subjectPlaceholder": "件名",
+    "messagePlaceholder": "メッセージ内容…",
+    "submit": "送信",
+    "sending": "送信中…",
+    "success": "メッセージを送信しました。ありがとうございます！",
+    "error": "送信できませんでした。後でもう一度お試しください。",
+    "errors": {
+      "required": "必須項目です",
+      "emailInvalid": "有効なメールアドレスを入力してください"
+    }
+  },
+  "cv": {
+    "title": "CVダウンロード",
+    "description": "マイグレーション経験、スキル、プロジェクトの概要をCVでご確認ください。",
+    "button": "CVをダウンロード"
+  }
+}

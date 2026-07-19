@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "技能 | {{name}}",
+    "description": "通过真实项目和个人开发积累的编程、后端、数据库、云与迁移技能。"
+  },
+  "eyebrow": "Technical Skills",
+  "title": "专业技能",
+  "description": "按领域和实际使用程度分组 — 不使用主观百分比，仅展示项目中的真实经验。",
+  "levels": {
+    "project": "项目中使用",
+    "practical": "有实践经验",
+    "learning": "学习中"
+  },
+  "categories": {
+    "language": "编程语言",
+    "frontend": "前端",
+    "backend": "后端",
+    "database": "数据库",
+    "cloud": "云与基础设施",
+    "tool": "工具",
+    "business": "业务技能"
+  },
+  "map": {
+    "title": "旅程技能地图",
+    "description": "从阅读 JSP/BHT-BASIC 源码、编写 Spring Boot API 到在 AWS 部署 HLS — 每组技能都对应作品集里的具体项目。"
+  }
+}

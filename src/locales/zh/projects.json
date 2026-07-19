@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "项目 | {{name}}",
+    "description": "Handy Terminal System Migration、Legacy JSP to C# WMS Migration 及个人项目 LearnOva Online Learning Platform。"
+  },
+  "eyebrow": "Projects",
+  "title": "项目",
+  "description": "从 Handy 设备与遗留 WMS 迁移到全栈学习平台 — 每个项目讲述 Problem → Analysis → Solution → Result 的故事。",
+  "filters": {
+    "all": "全部",
+    "migration": "Migration",
+    "web": "Web Application",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloud": "Cloud"
+  },
+  "empty": "没有符合所选筛选条件的项目。",
+  "sections": {
+    "overview": "概览",
+    "context": "背景",
+    "problems": "问题",
+    "goals": "目标",
+    "role": "角色",
+    "scope": "范围",
+    "tech": "技术",
+    "architecture": "系统架构",
+    "process": "流程",
+    "challenges": "挑战",
+    "solutions": "解决方案",
+    "results": "成果",
+    "learnings": "收获",
+    "before": "Before",
+    "migration": "Migration",
+    "after": "After",
+    "nextProject": "下一个项目",
+    "prevProject": "上一个项目"
+  },
+  "items": {
+    "handy": {
+      "shortDescription": "将 Handy 系统从 BHT-OS/BHT-BASIC 迁移至 Android + VB.NET PC 通信，保留现有服务器与数据库。",
+      "overview": "Handy Terminal System Migration 将手持应用从专有 BHT 平台迁移到 Keyence BT-A1000 上的 Android，并用 VB.NET 更新 PC Communication 应用。保留现有服务器与数据库，避免改变业务运行行为。",
+      "context": "旧系统运行在 BHT-OS 与 BHT-BASIC 的专用 BHT 设备上。Handy 应用通过 PC Communication 应用连接生产服务器与数据库。",
+      "problems": {
+        "p1": "BHT 专有平台难以扩展与集成现代技术。",
+        "p2": "BHT-BASIC 源码难维护且依赖老旧硬件。",
+        "p3": "BHT 设备停产后硬件更换困难。",
+        "p4": "迁移后须保持 Handy ↔ PC ↔ Server 通信流程不变。",
+        "p5": "不做行为对比的代码迁移存在业务不一致风险。"
+      },
+      "goals": {
+        "g1": "将 Handy 应用迁移至 Keyence BT-A1000 上的 Android。",
+        "g2": "用 VB.NET 更新 PC Communication 应用。",
+        "g3": "保持现有服务器与数据库不变。",
+        "g4": "保留业务流程与操作规程。",
+        "g5": "确保迁移后各层数据收发稳定。"
+      },
+      "role": "Software Developer Intern — 遗留分析、功能迁移支持与数据流验证。",
+      "scope": "Android Handy App ↔ VB.NET Communication App ↔ Existing Server / Database",
+      "techDescription": "Android, VB.NET, BHT-BASIC, Keyence BT-A1000, Existing Server, Existing Database.",
+      "architectureDescription": "Android Handy 与 VB.NET PC 应用通信；PC 应用连接现有服务器/数据库。保留服务器层以降低迁移风险。",
+      "responsibilities": {
+        "r1": "研究 BHT-BASIC 源码与旧设备处理流程。",
+        "r2": "分析 Handy、PC、服务器之间的数据收发流程。",
+        "r3": "对照旧系统行为与业务需求。",
+        "r4": "支持功能向 Android 应用的转换。",
+        "r5": "用 VB.NET 调整 PC 端通信逻辑。",
+        "r6": "验证每个迁移功能后的端到端数据流。",
+        "r7": "确保业务行为与迁移前一致。",
+        "r8": "支持在 Keyence BT-A1000 上测试。"
+      },
+      "highlights": {
+        "h1": "不仅是语言变更 — 在更换设备与平台的同时保持运营流程。",
+        "h2": "复用遗留服务器/数据库，缩小基础设施变更范围。",
+        "h3": "在确定 Android/VB.NET 逻辑前进行行为对比。"
+      },
+      "challenges": {
+        "c1": "BHT-BASIC 源码难读且缺乏标准化文档。",
+        "c2": "新 Android 与 VB.NET PC 应用须对齐旧协议。",
+        "c3": "测试依赖真实 Keyence 设备与近生产环境。"
+      },
+      "solutions": {
+        "s1": "逐屏/逐功能追踪并记录输入输出。",
+        "s2": "按业务流程小步迁移并逐步验证。",
+        "s3": "协调 BT-A1000 测试并与旧系统对比数据日志。"
+      },
+      "results": {
+        "res1": "Handy 功能迁移至 Android 且行为与旧系统一致。",
+        "res2": "VB.NET PC Communication 在新设备上稳定运行。",
+        "res3": "服务器/数据库未变，降低部署停机与风险。"
+      },
+      "learnings": {
+        "l1": "设备迁移需要理解协议与业务，而非仅做新 UI。",
+        "l2": "保留服务器层可缩小客户端变更时的测试范围。",
+        "l3": "行为对比记录是迁移团队的宝贵资产。"
+      },
+      "process": {
+        "legacy": "阅读 BHT-BASIC 源码与旧设备",
+        "analysis": "业务流程分析",
+        "convert": "功能转换至 Android",
+        "pc": "调整 VB.NET PC 通信",
+        "test": "Keyence BT-A1000 测试"
+      }
+    },
+    "wms": {
+      "shortDescription": "将 WMS 功能从 JSP 迁移至 C#/.NET，验证业务、数据与 Excel 报表，使新系统与旧系统一致。",
+      "overview": "Legacy JSP to C# WMS Migration 将仓库管理功能从 Java/JSP 迁移至分层架构的 C#/.NET。重点是保持业务逻辑、PostgreSQL 数据与 Excel 输出准确。",
+      "context": "旧系统使用 Java/JSP，业务逻辑嵌入遗留源码，Excel 模板报表与 PostgreSQL。新系统使用 C#/.NET 并连接同一 PostgreSQL。",
+      "problems": {
+        "p1": "分散在 JSP 中的业务逻辑难以追踪与复用。",
+        "p2": "不理解业务规则就做 Java→C# 语法转换易出错。",
+        "p3": "Excel 报表依赖模板与复杂月度汇总。",
+        "p4": "仅测 happy path 会遗漏权限、错误弹窗与边界情况。",
+        "p5": "需要持续对比新旧系统输出。"
+      },
+      "goals": {
+        "g1": "在 WMS 范围内将 JSP 功能迁移至 C#/.NET。",
+        "g2": "保持业务流程、权限与错误处理。",
+        "g3": "正确映射相关 PostgreSQL 表与查询。",
+        "g4": "确保 Excel（.xlsx）报表与遗留输出一致。",
+        "g5": "更新业务文档与逻辑差异说明。"
+      },
+      "role": "Software Developer Intern — JSP 分析、C# 迁移支持、数据与 Excel 验证。",
+      "scope": "Legacy JSP screens → C# Application/Infrastructure → PostgreSQL → Excel report output",
+      "techDescription": "Java, JSP, C#, .NET, PostgreSQL, SQL, Excel template, Git.",
+      "architectureDescription": "从遗留 JSP 经逻辑分析、数据库映射、C#/.NET 实现、对比测试到 Excel 导出。PostgreSQL 为两系统共享数据源。",
+      "responsibilities": {
+        "r1": "阅读并分析遗留 JSP 源码以确定业务流程。",
+        "r2": "确定各功能相关的 PostgreSQL 表与查询。",
+        "r3": "对比新旧系统逻辑。",
+        "r4": "支持从 JSP 到 C# 的功能转换。",
+        "r5": "验证权限条件、错误消息与弹窗。",
+        "r6": "检查迁移后的查询与输出数据。",
+        "r7": "支持 Excel 报表创建/验证 — 如 帳票_個人日報一覧 / Personal Daily Report List。",
+        "r8": "编写或更新业务文档与逻辑差异案例。"
+      },
+      "highlights": {
+        "h1": "以业务为中心的迁移 — 不仅是 Java→C# 语法转换。",
+        "h2": "验证 帳票_個人日報一覧 / Personal Daily Report List 按员工与月份的 Excel 报表。",
+        "h3": "对查询与汇总数据进行系统化的新旧输出对比。"
+      },
+      "challenges": {
+        "c1": "JSP 中混杂的逻辑使业务提取耗时。",
+        "c2": "多工作表与月度合计的 Excel 易出现数值偏差。",
+        "c3": "权限与会话边界情况因测试数据不足难以复现。"
+      },
+      "solutions": {
+        "s1": "在写 C# 前映射输入输出流程与数据库表。",
+        "s2": "逐工作表、逐月对比新旧 Excel 文件。",
+        "s3": "记录所有逻辑差异供导师/BA 评审。"
+      },
+      "results": {
+        "res1": "迁移后的 WMS 功能与遗留业务逻辑一致。",
+        "res2": "Excel 报表结构与数值符合预期。",
+        "res3": "更新的业务文档支持迁移后维护。"
+      },
+      "learnings": {
+        "l1": "WMS 迁移需理解报表与汇总，不仅是 CRUD。",
+        "l2": "更换后端技术栈时必须做对比测试。",
+        "l3": "逻辑差异记录有助于降低上线后回归风险。"
+      },
+      "process": {
+        "jsp": "阅读与分析遗留 JSP",
+        "logic": "提取业务逻辑",
+        "db": "PostgreSQL 映射",
+        "csharp": "C#/.NET 实现",
+        "compare": "新旧对比",
+        "excel": "Excel 输出验证"
+      }
+    },
+    "learnova": {
+      "shortDescription": "个人在线学习平台，含 HLS、CloudFront、PayOS webhook 与收益/佣金逻辑 — 作为作品集演示构建。",
+      "overview": "LearnOva Online Learning Platform 是全栈个人项目：课程管理、HLS 视频播放、PayOS 支付及平台与讲师之间的收益逻辑。功能为真实作品集演示而构建；部分仍可扩展。",
+      "context": "个人项目，用于实践 React + Spring Boot + PostgreSQL + AWS（S3、MediaConvert、CloudFront）及 PayOS webhook 支付状态更新。",
+      "problems": {
+        "p1": "大体积视频需要 HLS 转换流水线与 CDN 分发。",
+        "p2": "在线支付需处理 webhook 及支付成功后 UI 失败的情况。",
+        "p3": "收益与讲师佣金逻辑须清晰可验证。",
+        "p4": "全栈演示须在功能范围与开发时间间平衡。",
+        "p5": "多语言与学习内容需要一致的数据结构。"
+      },
+      "goals": {
+        "g1": "构建注册/登录与课程管理流程。",
+        "g2": "经 MediaConvert 处理后通过 CloudFront 交付 HLS 视频。",
+        "g3": "集成 PayOS 与支付状态更新 webhook。",
+        "g4": "管理收益与讲师佣金计算。",
+        "g5": "用 Docker 与清晰文档部署作品集演示。"
+      },
+      "role": "Full-stack Developer — API 设计、React 前端、视频流水线与支付集成。",
+      "scope": "React Frontend → Spring Boot API → PostgreSQL → S3/MediaConvert/CloudFront → PayOS Webhook",
+      "techDescription": "React, Vite, Java, Spring Boot, PostgreSQL, HLS.js, AWS S3, CloudFront, MediaConvert, PayOS, Docker.",
+      "architectureDescription": "React 调用 Spring Boot API；视频上传 S3，MediaConvert 转 HLS，CloudFront 分发。PayOS webhook 更新订单并触发收益逻辑。",
+      "responsibilities": {
+        "r1": "设计用户、课程、支付、收益的 PostgreSQL 模式。",
+        "r2": "构建认证、课程、支付的 Spring Boot REST API。",
+        "r3": "在 React 集成 HLS.js 与上传/转换视频流水线。",
+        "r4": "配置 S3、MediaConvert、CloudFront 用于流媒体。",
+        "r5": "集成 PayOS 并处理 webhook 状态更新。",
+        "r6": "实现收益与讲师佣金逻辑。",
+        "r7": "处理支付成功但 UI 出错的边界情况。",
+        "r8": "Docker 化并准备作品集演示。"
+      },
+      "highlights": {
+        "h1": "HLS + CloudFront — 在 AWS 上实践接近生产的流媒体。",
+        "h2": "可靠的 PayOS webhook 支付状态更新流程。",
+        "h3": "反映真实 marketplace 问题的收益/佣金逻辑。"
+      },
+      "challenges": {
+        "c1": "MediaConvert 流水线与 CDN 需正确配置权限与 URL。",
+        "c2": "支付 webhook 须幂等并处理重试。",
+        "c3": "回调延迟或过早关闭标签页时的 UI 状态同步。"
+      },
+      "solutions": {
+        "s1": "明确分离上传、转换与 HLS manifest 发布步骤。",
+        "s2": "在解锁课程前通过 webhook 确认支付 intent。",
+        "s3": "用户支付返回后轮询/刷新订单状态。"
+      },
+      "results": {
+        "res1": "作品集演示涵盖购课到 HLS 播放的端到端流程。",
+        "res2": "PayOS webhook 将订单与收益更新至正确状态。",
+        "res3": "全栈架构可扩展更多讲师功能。"
+      },
+      "learnings": {
+        "l1": "流媒体不仅是前端 — 存储、转码与 CDN 同样重要。",
+        "l2": "支付集成须为失败与重复 webhook 而设计。",
+        "l3": "选择接近生产问题的个人项目最有效。"
+      },
+      "process": {
+        "auth": "认证与用户管理",
+        "course": "课程与内容管理",
+        "video": "上传、HLS 转换与 CloudFront",
+        "pay": "PayOS 与支付 webhook",
+        "revenue": "收益与佣金"
+      }
+    }
+  }
+}

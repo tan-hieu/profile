@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "경력 | {{name}}",
+    "description": "GOLINE GLOBAL 과 RIKAI TECHNOLOGY 백엔드 인턴 — 레거시 마이그레이션 및 API 개발."
+  },
+  "eyebrow": "Experience",
+  "title": "경력",
+  "description": "레거시 읽기, 업무 분석, 마이그레이션 지원, 배포 후 검증까지 — 구체적 업무를 보여주는 인턴 타임라인.",
+  "items": {
+    "goline": {
+      "summary": "GOLINE GLOBAL 에서 두 마이그레이션 프로젝트 참여: 구 시스템 조사, BA 문서 읽기, 소스 분석, 구/신 로직 비교, 기능 마이그레이션 지원, 데이터 및 출력 검증, C#/VB.NET/Java/JSP/PostgreSQL 작업, 기술 문서 작성, 마이그레이션 후 버그 지원.",
+      "r1": "레거시 시스템(BHT-BASIC, JSP) 및 기존 서버/DB 아키텍처 조사.",
+      "r2": "BA 문서와 구 화면의 실제 동작 대조.",
+      "r3": "현행 소스코드에서 처리 흐름, 조건, 연동 지점 분석.",
+      "r4": "기능 변환 전후 구/신 시스템 로직 비교.",
+      "r5": "담당 범위 내 Android, VB.NET, C#/.NET 기능 마이그레이션 지원.",
+      "r6": "PostgreSQL 쿼리 및 Excel 보고서(.xlsx) 출력 검증.",
+      "r7": "기술 문서 및 로직 차이 메모 작성/업데이트.",
+      "r8": "Keyence BT-A1000 단말에서 마이그레이션 후 테스트 지원."
+    },
+    "rikai": {
+      "summary": "RIKAI TECHNOLOGY Java/Spring Boot 백엔드 인턴: 프로젝트 구조 학습, API 개발 지원, DB 쿼리, 문서, 팀 워크플로.",
+      "r1": "Spring Boot controller/service/repository 레이어 구조 학습.",
+      "r2": "멘토 지도 하 REST API 개발 및 수정 지원.",
+      "r3": "SQL 쿼리 작성, 엔티티 매핑, 기본 데이터 처리.",
+      "r4": "Git/GitHub 로 브랜치, 커밋, 내부 코드 리뷰.",
+      "r5": "Postman 으로 API 테스트 및 간단한 테스트 케이스 기록.",
+      "r6": "완료 기능의 기술 문서 및 엔드포인트 메모 업데이트."
+    }
+  },
+  "presentLabel": "현재 / 완료"
+}

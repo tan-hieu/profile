@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "关于 | {{name}}",
+    "description": "在 GOLINE GLOBAL 与 RIKAI TECHNOLOGY 具备遗留迁移、业务分析与多平台开发经验的 Backend Developer。"
+  },
+  "eyebrow": "About Me",
+  "title": "关于我",
+  "intro": "我是一名 Backend Developer，通过真实迁移工作建立后端基础。我通常从阅读遗留源码、梳理业务流程开始，确保迁移后的系统与原有系统行为一致，而不是直接写全新代码。",
+  "education": {
+    "title": "教育背景",
+    "body": "IT 基础涵盖面向对象编程、数据库与 Web 开发。学习期间通过后端实习和个人项目（如 LearnOva Online Learning Platform）积累实践经验。"
+  },
+  "direction": {
+    "title": "职业方向",
+    "body": "成长为擅长系统迁移、业务分析与 API 集成的 Backend Developer。短期：参与遗留系统向 .NET/Java 现代化项目；长期：成为既懂业务流程又懂系统架构的工程师。"
+  },
+  "strengths": {
+    "title": "优势",
+    "description": "由迁移工作与实习形成的优势 — 非空泛自我描述。",
+    "legacy": {
+      "title": "阅读遗留源码",
+      "body": "能追踪 BHT-BASIC、JSP、VB.NET 源码中的分支逻辑与服务器集成点，再编写新代码。"
+    },
+    "business": {
+      "title": "业务流程分析",
+      "body": "对照 BA 文档、旧界面与源码逻辑，在迁移前明确输入输出、权限与边界情况。"
+    },
+    "multitech": {
+      "title": "多技术栈协作",
+      "body": "按项目需要在 Android、VB.NET、Java/JSP、C#/.NET、PostgreSQL、Spring Boot 之间切换。"
+    },
+    "verification": {
+      "title": "数据与逻辑验证",
+      "body": "对比查询结果、Excel 导出及错误/弹窗行为，及早发现新旧系统差异。"
+    },
+    "learning": {
+      "title": "快速学习新技术",
+      "body": "在项目或个人开发需要时自学 HLS 流媒体、AWS CloudFront、PayOS webhook 等。"
+    },
+    "migration": {
+      "title": "迁移中保持业务正确性",
+      "body": "优先保证行为与输出准确，而非仅做语法转换 — 尤其针对 Excel 报表与 Handy 设备流程。"
+    }
+  },
+  "workStyle": {
+    "title": "工作方式",
+    "body": "先理解问题与业务流程，再写代码。记录新旧逻辑差异、更新技术文档，并配合迁移后测试。"
+  },
+  "interests": {
+    "title": "专业兴趣",
+    "body": "迁移架构、遗留代码阅读、API 设计、数据库映射，以及包含真实支付与流媒体的全栈产品。"
+  },
+  "timeline": {
+    "title": "学习与实习时间线",
+    "study": {
+      "period": "大学",
+      "title": "IT 与编程基础",
+      "body": "学习编程、数据库、Web 开发，完成课程与个人项目。"
+    },
+    "goline": {
+      "period": "实习",
+      "title": "GOLINE GLOBAL — Backend Developer DEV",
+      "body": "参与 Handy Terminal System Migration 与 Legacy JSP to C# WMS Migration：遗留源码阅读、业务分析、功能迁移支持与数据验证。"
+    },
+    "rikai": {
+      "period": "实习",
+      "title": "RIKAI TECHNOLOGY — Backend Developer DEV",
+      "body": "Java/Spring Boot 后端实习：项目结构、API 开发、数据库与技术文档。"
+    },
+    "personal": {
+      "period": "持续",
+      "title": "个人项目",
+      "body": "构建 LearnOva Online Learning Platform 与本 Developer Journey 作品集，实践全栈、HLS、支付与云部署。"
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "About | {{name}}",
+    "description": "Backend Developer with legacy system migration experience, business analysis, and multi-platform work at GOLINE GLOBAL and RIKAI TECHNOLOGY."
+  },
+  "eyebrow": "About Me",
+  "title": "About me",
+  "intro": "I am a Backend Developer building a solid backend foundation through real migration work. Rather than jumping straight into greenfield code, I usually start by reading legacy source, mapping business flows, and ensuring the post-migration system behaves like the original.",
+  "education": {
+    "title": "Education",
+    "body": "IT foundation in object-oriented programming, databases, and web development. Alongside coursework, I gained practical experience through backend internships and personal projects such as LearnOva Online Learning Platform."
+  },
+  "direction": {
+    "title": "Career direction",
+    "body": "Grow as a Backend Developer with strengths in system migration, business analysis, and API integration. Short term: contribute to legacy-to-.NET/Java modernization projects. Long term: become an engineer who understands both business flows and system architecture deeply."
+  },
+  "strengths": {
+    "title": "Strengths",
+    "description": "Strengths shaped by migration work and internships — not generic self-descriptions.",
+    "legacy": {
+      "title": "Reading legacy source code",
+      "body": "Can trace flows in BHT-BASIC, JSP, and VB.NET source to understand branching logic and server integration points before writing new code."
+    },
+    "business": {
+      "title": "Business flow analysis",
+      "body": "Cross-check BA documents, legacy screens, and source logic to define inputs/outputs, permissions, and edge cases before migration."
+    },
+    "multitech": {
+      "title": "Working across technologies",
+      "body": "Switch between Android, VB.NET, Java/JSP, C#/.NET, PostgreSQL, and Spring Boot depending on project scope."
+    },
+    "verification": {
+      "title": "Data and logic verification",
+      "body": "Compare query results, exported Excel files, and error/popup behavior between old and new systems to catch discrepancies early."
+    },
+    "learning": {
+      "title": "Learning new tech quickly",
+      "body": "Self-learn HLS streaming, AWS CloudFront, PayOS webhooks, and new stacks when projects or personal work require them."
+    },
+    "migration": {
+      "title": "Preserving business correctness in migration",
+      "body": "Prioritize behavioral parity and output accuracy over syntax conversion — especially for Excel reports and Handy device flows."
+    }
+  },
+  "workStyle": {
+    "title": "Work style",
+    "body": "Understand the problem and business flow first, then code. Document old/new logic differences, update technical docs, and collaborate on post-migration testing."
+  },
+  "interests": {
+    "title": "Professional interests",
+    "body": "Migration architecture, legacy code reading, API design, database mapping, and building full-stack products with real payment and streaming flows."
+  },
+  "timeline": {
+    "title": "Education & internship timeline",
+    "study": {
+      "period": "University",
+      "title": "IT & programming foundation",
+      "body": "Studied programming, databases, web development, and completed coursework and personal projects."
+    },
+    "goline": {
+      "period": "Internship",
+      "title": "GOLINE GLOBAL — Backend Developer DEV",
+      "body": "Contributed to Handy Terminal System Migration and Legacy JSP to C# WMS Migration: legacy source reading, business analysis, feature conversion support, and data verification."
+    },
+    "rikai": {
+      "period": "Internship",
+      "title": "RIKAI TECHNOLOGY — Backend Developer DEV",
+      "body": "Backend internship with Java/Spring Boot: project structure, API development, database work, and technical documentation."
+    },
+    "personal": {
+      "period": "Ongoing",
+      "title": "Personal projects",
+      "body": "Built LearnOva Online Learning Platform and this Developer Journey portfolio to practice full-stack, HLS, payments, and cloud deployment."
+    }
+  }
+}

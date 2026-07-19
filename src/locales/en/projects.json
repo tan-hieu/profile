@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Projects | {{name}}",
+    "description": "Migration projects Handy Terminal System Migration, Legacy JSP to C# WMS Migration, and the personal project LearnOva Online Learning Platform."
+  },
+  "eyebrow": "Projects",
+  "title": "Projects",
+  "description": "From Handy device and legacy WMS migration to a full-stack learning platform — each project tells a Problem → Analysis → Solution → Result story.",
+  "filters": {
+    "all": "All",
+    "migration": "Migration",
+    "web": "Web Application",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloud": "Cloud"
+  },
+  "empty": "No projects match the selected filter.",
+  "sections": {
+    "overview": "Overview",
+    "context": "Context",
+    "problems": "Problems",
+    "goals": "Goals",
+    "role": "Role",
+    "scope": "Scope",
+    "tech": "Technologies",
+    "architecture": "System architecture",
+    "process": "Process",
+    "challenges": "Challenges",
+    "solutions": "Solutions",
+    "results": "Results",
+    "learnings": "Learnings",
+    "before": "Before",
+    "migration": "Migration",
+    "after": "After",
+    "nextProject": "Next project",
+    "prevProject": "Previous project"
+  },
+  "items": {
+    "handy": {
+      "shortDescription": "Migration of the Handy system from BHT-OS/BHT-BASIC to Android + VB.NET PC communication while keeping the existing server and database.",
+      "overview": "Handy Terminal System Migration moves the handheld application from the proprietary BHT platform to Android on Keyence BT-A1000, while updating the PC Communication app in VB.NET. Existing server and database are preserved to avoid changing operational business behavior.",
+      "context": "The legacy system ran on dedicated BHT devices with BHT-OS and BHT-BASIC. The Handy app communicated with a PC Communication app, then connected to production server and database.",
+      "problems": {
+        "p1": "Proprietary BHT platform, hard to extend and integrate with modern technology.",
+        "p2": "BHT-BASIC source is difficult to maintain and tied to aging hardware.",
+        "p3": "Hardware replacement is hard when BHT devices are no longer supported.",
+        "p4": "Handy ↔ PC ↔ Server communication flow must remain intact after migration.",
+        "p5": "Risk of business mismatch if code is moved without behavioral comparison."
+      },
+      "goals": {
+        "g1": "Move the Handy app to Android on Keyence BT-A1000 devices.",
+        "g2": "Update the PC Communication application in VB.NET.",
+        "g3": "Keep the existing server and database unchanged.",
+        "g4": "Preserve business flows and operational procedures.",
+        "g5": "Ensure stable data transmission across all tiers after migration."
+      },
+      "role": "Software Developer Intern — legacy source analysis, feature conversion support, and data flow verification.",
+      "scope": "Android Handy App ↔ VB.NET Communication App ↔ Existing Server / Database",
+      "techDescription": "Android, VB.NET, BHT-BASIC, Keyence BT-A1000, Existing Server, Existing Database.",
+      "architectureDescription": "Android Handy communicates with the VB.NET PC app; the PC app connects to the existing server/database. Server tier is preserved to reduce migration risk.",
+      "responsibilities": {
+        "r1": "Studied BHT-BASIC source and processing flows on legacy devices.",
+        "r2": "Analyzed data send/receive flows between Handy, PC, and server.",
+        "r3": "Cross-checked legacy system behavior against business requirements.",
+        "r4": "Supported conversion of features to the Android application.",
+        "r5": "Adjusted PC-side communication logic in VB.NET.",
+        "r6": "Verified end-to-end data flows after each migrated feature.",
+        "r7": "Ensured business behavior matched the pre-migration system.",
+        "r8": "Supported testing on Keyence BT-A1000 hardware."
+      },
+      "highlights": {
+        "h1": "More than a language change — device and platform shift while preserving operations.",
+        "h2": "Legacy server and database reused, narrowing infrastructure change scope.",
+        "h3": "Behavioral comparison workflow before finalizing Android/VB.NET logic."
+      },
+      "challenges": {
+        "c1": "BHT-BASIC source is hard to read with limited standardized documentation.",
+        "c2": "Aligning new Android and VB.NET PC app behavior with legacy protocol.",
+        "c3": "Testing depends on real Keyence devices and production-like environments."
+      },
+      "solutions": {
+        "s1": "Traced each legacy screen/feature and recorded inputs and outputs.",
+        "s2": "Migrated in small business-flow slices with step-by-step verification.",
+        "s3": "Coordinated BT-A1000 testing and compared data logs with the legacy system."
+      },
+      "results": {
+        "res1": "Handy features migrated to Android with behavior matching the legacy system.",
+        "res2": "VB.NET PC communication app stable with new devices.",
+        "res3": "Server/database unchanged, reducing deployment downtime and risk."
+      },
+      "learnings": {
+        "l1": "Device migration requires understanding protocol and business logic, not just new UI.",
+        "l2": "Keeping the server tier narrows test scope when clients change.",
+        "l3": "Behavior comparison notes are valuable assets for migration teams."
+      },
+      "process": {
+        "legacy": "Read BHT-BASIC source & legacy device",
+        "analysis": "Business flow analysis",
+        "convert": "Convert features to Android",
+        "pc": "Adjust VB.NET PC communication",
+        "test": "Test on Keyence BT-A1000"
+      }
+    },
+    "wms": {
+      "shortDescription": "Migration of WMS features from JSP to C#/.NET with business, data, and Excel report verification so the new system matches the old one.",
+      "overview": "Legacy JSP to C# WMS Migration moves warehouse management features from Java/JSP to C#/.NET with Application/Infrastructure separation. Focus is on preserving business logic, PostgreSQL data, and Excel report output accuracy.",
+      "context": "The legacy system used Java/JSP with business logic embedded in legacy source, Excel templates for reports, and PostgreSQL. The new system uses C#/.NET with layered architecture and the same PostgreSQL database.",
+      "problems": {
+        "p1": "Business logic scattered in JSP is hard to trace and reuse.",
+        "p2": "Risk of mismatch when converting Java syntax to C# without understanding business rules.",
+        "p3": "Excel reports depend on templates and complex monthly aggregation.",
+        "p4": "Permissions, error popups, and edge cases are missed with happy-path-only testing.",
+        "p5": "Continuous comparison between old and new outputs is required."
+      },
+      "goals": {
+        "g1": "Migrate JSP features to C#/.NET within WMS scope.",
+        "g2": "Preserve business flows, permissions, and error handling.",
+        "g3": "Map related PostgreSQL tables and queries correctly.",
+        "g4": "Ensure Excel (.xlsx) reports match legacy output.",
+        "g5": "Update business documentation and logic difference notes."
+      },
+      "role": "Software Developer Intern — JSP analysis, C# conversion support, data and Excel report verification.",
+      "scope": "Legacy JSP screens → C# Application/Infrastructure → PostgreSQL → Excel report output",
+      "techDescription": "Java, JSP, C#, .NET, PostgreSQL, SQL, Excel template, Git.",
+      "architectureDescription": "Flow from legacy JSP through logic analysis, database mapping, C#/.NET implementation, comparison testing, and Excel export. PostgreSQL is the shared data source between both systems.",
+      "responsibilities": {
+        "r1": "Read and analyzed legacy JSP source to identify business flows.",
+        "r2": "Identified related PostgreSQL tables and queries per feature.",
+        "r3": "Compared logic between old and new systems.",
+        "r4": "Supported conversion of features from JSP to C#.",
+        "r5": "Verified permission conditions, error messages, and popups.",
+        "r6": "Checked queries and output data after migration.",
+        "r7": "Supported Excel report creation/verification — e.g. 帳票_個人日報一覧 / Personal Daily Report List.",
+        "r8": "Wrote or updated business documentation and logic difference cases."
+      },
+      "highlights": {
+        "h1": "Business-focused migration — not just Java → C# syntax conversion.",
+        "h2": "Excel report verification for 帳票_個人日報一覧 / Personal Daily Report List by employee and month.",
+        "h3": "Systematic old/new output comparison for queries and aggregated data."
+      },
+      "challenges": {
+        "c1": "JSP logic mixed into views makes business extraction time-consuming.",
+        "c2": "Multi-worksheet Excel reports with monthly totals are prone to numeric drift.",
+        "c3": "Permission and session edge cases are hard to reproduce without test data."
+      },
+      "solutions": {
+        "s1": "Mapped input/output flows and DB tables before writing C#.",
+        "s2": "Compared old/new Excel files worksheet by worksheet and monthly totals.",
+        "s3": "Recorded every logic difference for review with mentor/BA."
+      },
+      "results": {
+        "res1": "Migrated WMS features behave consistently with legacy business logic.",
+        "res2": "Excel reports export with correct structure and expected figures.",
+        "res3": "Updated business documentation supports post-migration maintenance."
+      },
+      "learnings": {
+        "l1": "WMS migration requires understanding reports and aggregation, not just CRUD.",
+        "l2": "Comparison testing is mandatory when replacing the backend stack.",
+        "l3": "Logic difference notes reduce regression risk after go-live."
+      },
+      "process": {
+        "jsp": "Read & analyze legacy JSP",
+        "logic": "Extract business logic",
+        "db": "PostgreSQL mapping",
+        "csharp": "C#/.NET implementation",
+        "compare": "Old vs new comparison",
+        "excel": "Excel output verification"
+      }
+    },
+    "learnova": {
+      "shortDescription": "Personal online learning platform with HLS streaming, CloudFront, PayOS webhooks, and revenue/commission logic — built as a portfolio demo.",
+      "overview": "LearnOva Online Learning Platform is a full-stack personal project: course management, HLS video playback, PayOS payments, and revenue logic between platform and instructors. Features are built for a real portfolio demo; some areas can still be extended.",
+      "context": "A personal project to practice React + Spring Boot + PostgreSQL + AWS (S3, MediaConvert, CloudFront) and PayOS integration with webhook-based payment status updates.",
+      "problems": {
+        "p1": "Large source videos require an HLS conversion pipeline and CDN delivery.",
+        "p2": "Online payments need webhook handling and UI failure after successful payment.",
+        "p3": "Revenue and instructor commission logic must be clear and verifiable.",
+        "p4": "Full-stack demo must balance feature scope and development time.",
+        "p5": "Multilingual support and learning content need consistent data structure."
+      },
+      "goals": {
+        "g1": "Build registration/login and course management flows.",
+        "g2": "Deliver HLS video via CloudFront after MediaConvert processing.",
+        "g3": "Integrate PayOS and webhooks for payment status updates.",
+        "g4": "Manage revenue and instructor commission calculation.",
+        "g5": "Deploy a portfolio demo with Docker and clear documentation."
+      },
+      "role": "Full-stack Developer — API design, React frontend, video pipeline, and payment integration.",
+      "scope": "React Frontend → Spring Boot API → PostgreSQL → S3/MediaConvert/CloudFront → PayOS Webhook",
+      "techDescription": "React, Vite, Java, Spring Boot, PostgreSQL, HLS.js, AWS S3, CloudFront, MediaConvert, PayOS, Docker.",
+      "architectureDescription": "React frontend calls Spring Boot API; videos upload to S3, convert to HLS via MediaConvert, and stream through CloudFront. PayOS webhooks update orders and trigger revenue logic.",
+      "responsibilities": {
+        "r1": "Designed PostgreSQL schema for users, courses, payments, and revenue.",
+        "r2": "Built Spring Boot REST APIs for auth, courses, and payments.",
+        "r3": "Integrated HLS.js on React and upload/convert video pipeline.",
+        "r4": "Configured S3, MediaConvert, and CloudFront for streaming.",
+        "r5": "Integrated PayOS and handled webhook status updates.",
+        "r6": "Implemented revenue and instructor commission logic.",
+        "r7": "Handled edge case: payment success while UI encounters an error.",
+        "r8": "Dockerized and prepared the portfolio demo."
+      },
+      "highlights": {
+        "h1": "HLS video + CloudFront — production-like streaming practice on AWS.",
+        "h2": "PayOS webhooks with reliable payment status update flow.",
+        "h3": "Revenue/commission logic reflecting a real marketplace problem."
+      },
+      "challenges": {
+        "c1": "MediaConvert pipeline and CDN require correct permissions and URLs.",
+        "c2": "Payment webhooks must be idempotent and handle retries.",
+        "c3": "UI state sync when payment callback is slow or the tab closes early."
+      },
+      "solutions": {
+        "s1": "Separated upload, convert, and HLS manifest publish steps clearly.",
+        "s2": "Stored payment intent and confirmed access via webhook before unlocking courses.",
+        "s3": "Polling/refresh order status when users return after payment."
+      },
+      "results": {
+        "res1": "Portfolio demo with end-to-end course purchase and HLS playback.",
+        "res2": "PayOS webhooks update orders and revenue to the correct state.",
+        "res3": "Full-stack architecture ready for additional instructor features."
+      },
+      "learnings": {
+        "l1": "Streaming is not frontend-only — storage, transcode, and CDN matter.",
+        "l2": "Payment integration must be designed for failure and duplicate webhooks.",
+        "l3": "Personal projects work best when the problem is close to real production."
+      },
+      "process": {
+        "auth": "Auth & user management",
+        "course": "Course & content management",
+        "video": "Upload, HLS convert & CloudFront",
+        "pay": "PayOS & payment webhooks",
+        "revenue": "Revenue & commission"
+      }
+    }
+  }
+}

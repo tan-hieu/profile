@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "{{name}} | Fresher Backend Developer",
+    "description": "专注于遗留系统迁移、业务分析和现代平台交付的 Fresher Backend Developer。"
+  },
+  "eyebrow": "Developer Journey",
+  "greeting": "你好，我是",
+  "role": "Fresher Backend Developer",
+  "intro": "我参与过旧系统向现代平台的迁移项目，专注于业务分析、代码转换，并确保新系统保持旧系统的行为一致。",
+  "cta": {
+    "projects": "查看项目",
+    "cv": "下载简历"
+  },
+  "stats": {
+    "migrations": {
+      "value": "2",
+      "label": "系统迁移项目"
+    },
+    "personal": {
+      "value": "3+",
+      "label": "个人与作品集项目"
+    },
+    "platforms": {
+      "value": "6+",
+      "label": "使用过的平台与技术栈"
+    }
+  },
+  "journey": {
+    "title": "迁移之旅",
+    "description": "从阅读遗留源码、分析业务流程到实现并验证新系统。",
+    "legacy": "Legacy System",
+    "analysis": "Business Analysis",
+    "migration": "Code Migration",
+    "testing": "Testing",
+    "modern": "Modern Platform"
+  },
+  "featured": {
+    "title": "精选项目",
+    "description": "GOLINE GLOBAL 的两个真实迁移项目以及个人项目 LearnOva Online Learning Platform。"
+  },
+  "tech": {
+    "title": "核心技术"
+  },
+  "terminal": {
+    "title": "terminal — intro",
+    "line1": "$ whoami",
+    "line2": "$ focus — legacy → analysis → migration → modern",
+    "line3": "$ status — migration-first developer journey"
+  },
+  "nextHint": "下一步：自我介绍与职业方向"
+}

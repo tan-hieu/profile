@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "{{name}} | Fresher Backend Developer",
+    "description": "レガシーシステムのマイグレーション、業務分析、モダンプラットフォームへの移行を専門とする Fresher Backend Developer。"
+  },
+  "eyebrow": "Developer Journey",
+  "greeting": "こんにちは、私は",
+  "role": "Fresher Backend Developer",
+  "intro": "旧システムからモダンプラットフォームへのマイグレーションプロジェクトに参画し、業務分析、コード変換、新システムが旧システムと同じ動作を維持することに注力してきました。",
+  "cta": {
+    "projects": "プロジェクトを見る",
+    "cv": "CVをダウンロード"
+  },
+  "stats": {
+    "migrations": {
+      "value": "2",
+      "label": "システムマイグレーションプロジェクト"
+    },
+    "personal": {
+      "value": "3+",
+      "label": "個人・ポートフォリオプロジェクト"
+    },
+    "platforms": {
+      "value": "6+",
+      "label": "経験したプラットフォームとスタック"
+    }
+  },
+  "journey": {
+    "title": "マイグレーションの旅",
+    "description": "レガシーソースの読解と業務フロー分析から、新システムの実装と検証まで。",
+    "legacy": "Legacy System",
+    "analysis": "Business Analysis",
+    "migration": "Code Migration",
+    "testing": "Testing",
+    "modern": "Modern Platform"
+  },
+  "featured": {
+    "title": "注目プロジェクト",
+    "description": "GOLINE GLOBAL での2つのマイグレーションプロジェクトと個人プロジェクト LearnOva Online Learning Platform。"
+  },
+  "tech": {
+    "title": "主要テクノロジー"
+  },
+  "terminal": {
+    "title": "terminal — intro",
+    "line1": "$ whoami",
+    "line2": "$ focus — legacy → analysis → migration → modern",
+    "line3": "$ status — migration-first developer journey"
+  },
+  "nextHint": "次へ：自己紹介とキャリアの方向性"
+}

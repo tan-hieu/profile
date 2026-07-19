@@ -1,0 +1,47 @@
+{
+  "navigation": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "actions": {
+    "viewProjects": "Xem dự án",
+    "downloadCv": "Tải CV",
+    "contactMe": "Liên hệ",
+    "viewDetails": "Xem chi tiết",
+    "previous": "Trang trước",
+    "next": "Trang tiếp theo",
+    "send": "Gửi tin nhắn",
+    "sending": "Đang gửi…",
+    "backHome": "Về trang chủ",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu",
+    "changeLanguage": "Đổi ngôn ngữ",
+    "toggleTheme": "Đổi giao diện",
+    "allFilters": "Tất cả"
+  },
+  "footer": {
+    "journey": "Developer Journey — từ hệ thống legacy đến nền tảng hiện đại",
+    "rights": "© {{year}} {{name}}. Mọi quyền được bảo lưu."
+  },
+  "theme": {
+    "light": "Sáng",
+    "dark": "Tối"
+  },
+  "loading": "Đang tải…",
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Trang bạn tìm không tồn tại hoặc đã được di chuyển. Quay về trang chủ để tiếp tục khám phá hành trình migration."
+  },
+  "pageNav": {
+    "previous": "Trang trước",
+    "next": "Trang tiếp theo",
+    "keyboardHint": "Dùng phím ← → để chuyển trang"
+  },
+  "a11y": {
+    "skipToContent": "Bỏ qua đến nội dung chính"
+  }
+}

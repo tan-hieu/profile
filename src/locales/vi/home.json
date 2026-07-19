@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "{{name}} | Fresher Backend Developer",
+    "description": "Fresher Backend Developer chuyên migration hệ thống legacy, phân tích nghiệp vụ và chuyển đổi sang nền tảng hiện đại."
+  },
+  "eyebrow": "Developer Journey",
+  "greeting": "Xin chào, tôi là",
+  "role": "Fresher Backend Developer",
+  "intro": "Tôi có kinh nghiệm tham gia các dự án migration hệ thống cũ sang nền tảng hiện đại, tập trung vào phân tích nghiệp vụ, chuyển đổi code và đảm bảo hệ thống mới giữ đúng hành vi cũ.",
+  "cta": {
+    "projects": "Xem dự án",
+    "cv": "Tải CV"
+  },
+  "stats": {
+    "migrations": {
+      "value": "2",
+      "label": "Dự án migration hệ thống"
+    },
+    "personal": {
+      "value": "3+",
+      "label": "Dự án cá nhân & portfolio"
+    },
+    "platforms": {
+      "value": "6+",
+      "label": "Nền tảng & stack đã làm việc"
+    }
+  },
+  "journey": {
+    "title": "Hành trình migration",
+    "description": "Từ việc đọc source legacy, phân tích luồng nghiệp vụ đến triển khai và kiểm chứng hệ thống mới.",
+    "legacy": "Legacy System",
+    "analysis": "Business Analysis",
+    "migration": "Code Migration",
+    "testing": "Testing",
+    "modern": "Modern Platform"
+  },
+  "featured": {
+    "title": "Dự án nổi bật",
+    "description": "Hai dự án migration thực tế tại GOLINE GLOBAL và dự án cá nhân LearnOva Online Learning Platform."
+  },
+  "tech": {
+    "title": "Công nghệ nổi bật"
+  },
+  "terminal": {
+    "title": "terminal — intro",
+    "line1": "$ whoami",
+    "line2": "$ focus — legacy → analysis → migration → modern",
+    "line3": "$ status — migration-first developer journey"
+  },
+  "nextHint": "Tiếp theo: Giới thiệu bản thân và định hướng nghề nghiệp"
+}

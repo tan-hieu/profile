@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Dự án | {{name}}",
+    "description": "Các dự án migration Handy Terminal System Migration, Legacy JSP to C# WMS Migration và dự án cá nhân LearnOva Online Learning Platform."
+  },
+  "eyebrow": "Projects",
+  "title": "Dự án",
+  "description": "Từ migration thiết bị Handy và WMS legacy đến nền tảng học trực tuyến full-stack — mỗi dự án kể câu chuyện Problem → Analysis → Solution → Result.",
+  "filters": {
+    "all": "Tất cả",
+    "migration": "Migration",
+    "web": "Web Application",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloud": "Cloud"
+  },
+  "empty": "Không có dự án phù hợp với bộ lọc đã chọn.",
+  "sections": {
+    "overview": "Tổng quan",
+    "context": "Bối cảnh",
+    "problems": "Vấn đề",
+    "goals": "Mục tiêu",
+    "role": "Vai trò",
+    "scope": "Phạm vi",
+    "tech": "Công nghệ",
+    "architecture": "Kiến trúc hệ thống",
+    "process": "Quy trình xử lý",
+    "challenges": "Khó khăn",
+    "solutions": "Cách giải quyết",
+    "results": "Kết quả",
+    "learnings": "Điều học được",
+    "before": "Before",
+    "migration": "Migration",
+    "after": "After",
+    "nextProject": "Dự án tiếp theo",
+    "prevProject": "Dự án trước đó"
+  },
+  "items": {
+    "handy": {
+      "shortDescription": "Migration hệ thống Handy từ BHT-OS/BHT-BASIC sang Android + VB.NET PC communication, giữ nguyên server và database.",
+      "overview": "Handy Terminal System Migration chuyển ứng dụng thiết bị cầm tay từ nền tảng proprietary BHT sang Android trên Keyence BT-A1000, đồng thời điều chỉnh ứng dụng giao tiếp PC bằng VB.NET. Server và database hiện có được giữ nguyên để không làm thay đổi nghiệp vụ vận hành.",
+      "context": "Hệ thống cũ vận hành trên thiết bị BHT chuyên dụng với BHT-OS và ngôn ngữ BHT-BASIC. Ứng dụng Handy giao tiếp với PC qua ứng dụng Communication, rồi kết nối tới server và database đang được sử dụng trong sản xuất.",
+      "problems": {
+        "p1": "Nền tảng BHT proprietary, khó mở rộng và tích hợp công nghệ mới.",
+        "p2": "Source BHT-BASIC khó bảo trì và phụ thuộc vào thiết bị cũ.",
+        "p3": "Khó thay thế phần cứng khi thiết bị BHT ngừng hỗ trợ.",
+        "p4": "Luồng giao tiếp Handy ↔ PC ↔ Server cần được giữ nguyên sau migration.",
+        "p5": "Rủi ro sai lệch nghiệp vụ nếu chỉ chuyển code mà không đối chiếu hành vi cũ."
+      },
+      "goals": {
+        "g1": "Chuyển ứng dụng Handy sang Android trên thiết bị Keyence BT-A1000.",
+        "g2": "Điều chỉnh ứng dụng Communication trên PC bằng VB.NET.",
+        "g3": "Giữ nguyên server và database hiện có.",
+        "g4": "Không thay đổi luồng nghiệp vụ và quy trình vận hành.",
+        "g5": "Đảm bảo truyền/nhận dữ liệu giữa các tầng hoạt động ổn định sau migration."
+      },
+      "role": "Software Developer Intern — tham gia phân tích source legacy, hỗ trợ chuyển đổi chức năng và kiểm tra luồng dữ liệu.",
+      "scope": "Android Handy App ↔ VB.NET Communication App ↔ Existing Server / Database",
+      "techDescription": "Android, VB.NET, BHT-BASIC, Keyence BT-A1000, Existing Server, Existing Database.",
+      "architectureDescription": "Thiết bị Android Handy giao tiếp với ứng dụng VB.NET trên PC; PC app kết nối server/database hiện có. Kiến trúc giữ nguyên tầng server để giảm rủi ro migration.",
+      "responsibilities": {
+        "r1": "Tìm hiểu source BHT-BASIC và luồng xử lý trên thiết bị cũ.",
+        "r2": "Phân tích luồng truyền/nhận dữ liệu giữa Handy, PC và server.",
+        "r3": "Đối chiếu hành vi hệ thống cũ với yêu cầu nghiệp vụ.",
+        "r4": "Hỗ trợ chuyển đổi chức năng sang ứng dụng Android.",
+        "r5": "Điều chỉnh logic giao tiếp phía PC bằng VB.NET.",
+        "r6": "Kiểm tra luồng dữ liệu end-to-end sau từng chức năng migration.",
+        "r7": "Đảm bảo nghiệp vụ giữ nguyên so với hệ thống trước migration.",
+        "r8": "Hỗ trợ test trên thiết bị Keyence BT-A1000."
+      },
+      "highlights": {
+        "h1": "Không chỉ đổi ngôn ngữ — thay đổi cả thiết bị và nền tảng trong khi giữ luồng vận hành.",
+        "h2": "Server và database legacy được tái sử dụng, giảm phạm vi thay đổi hạ tầng.",
+        "h3": "Quy trình đối chiếu hành vi cũ trước khi chốt logic Android/VB.NET."
+      },
+      "challenges": {
+        "c1": "Source BHT-BASIC khó đọc và thiếu tài liệu chuẩn hóa.",
+        "c2": "Đồng bộ hành vi giữa Android mới và PC app VB.NET với protocol cũ.",
+        "c3": "Test phụ thuộc thiết bị Keyence thật và môi trường sản xuất."
+      },
+      "solutions": {
+        "s1": "Truy vết từng màn hình/chức năng trên thiết bị cũ và ghi lại input/output.",
+        "s2": "Chia nhỏ migration theo luồng nghiệp vụ, verify từng bước trước khi ghép.",
+        "s3": "Phối hợp test trên BT-A1000 và so sánh log dữ liệu với hệ thống cũ."
+      },
+      "results": {
+        "res1": "Các chức năng Handy được chuyển sang Android với hành vi khớp hệ thống cũ.",
+        "res2": "Ứng dụng VB.NET PC communication hoạt động ổn định với thiết bị mới.",
+        "res3": "Server/database giữ nguyên, giảm downtime và rủi ro triển khai."
+      },
+      "learnings": {
+        "l1": "Migration thiết bị đòi hỏi hiểu protocol và nghiệp vụ hơn là chỉ viết UI mới.",
+        "l2": "Giữ tầng server giúp thu hẹp phạm vi kiểm thử khi đổi client.",
+        "l3": "Ghi chép đối chiếu hành vi cũ là tài sản quan trọng cho team migration."
+      },
+      "process": {
+        "legacy": "Đọc source BHT-BASIC & thiết bị cũ",
+        "analysis": "Phân tích luồng nghiệp vụ",
+        "convert": "Chuyển chức năng sang Android",
+        "pc": "Điều chỉnh VB.NET PC communication",
+        "test": "Kiểm thử trên Keyence BT-A1000"
+      }
+    },
+    "wms": {
+      "shortDescription": "Migration chức năng WMS từ JSP sang C#/.NET, kiểm tra nghiệp vụ, dữ liệu và báo cáo Excel để đảm bảo hệ thống mới giống hệ thống cũ.",
+      "overview": "Legacy JSP to C# WMS Migration chuyển các chức năng quản lý kho từ stack Java/JSP sang C#/.NET với tách Application và Infrastructure. Trọng tâm là giữ đúng logic nghiệp vụ, dữ liệu PostgreSQL và kết quả xuất báo cáo Excel.",
+      "context": "Hệ thống cũ dùng Java/JSP với business logic nằm trong source legacy, báo cáo Excel template và PostgreSQL. Hệ thống mới dùng C#/.NET, kiến trúc phân lớp và vẫn kết nối PostgreSQL.",
+      "problems": {
+        "p1": "Business logic phân tán trong JSP khó truy vết và tái sử dụng.",
+        "p2": "Rủi ro sai lệch khi chuyển syntax Java sang C# mà không hiểu nghiệp vụ.",
+        "p3": "Báo cáo Excel phụ thuộc template và tổng hợp dữ liệu phức tạp.",
+        "p4": "Phân quyền, popup lỗi và edge case khó phát hiện nếu chỉ test happy path.",
+        "p5": "Cần đối chiếu liên tục giữa output hệ thống cũ và mới."
+      },
+      "goals": {
+        "g1": "Migration chức năng JSP sang C#/.NET theo phạm vi WMS.",
+        "g2": "Giữ đúng luồng nghiệp vụ, phân quyền và xử lý lỗi.",
+        "g3": "Map đúng bảng/query PostgreSQL liên quan.",
+        "g4": "Đảm bảo báo cáo Excel (.xlsx) khớp kết quả hệ thống cũ.",
+        "g5": "Cập nhật tài liệu nghiệp vụ và ghi chú khác biệt logic."
+      },
+      "role": "Software Developer Intern — phân tích JSP, hỗ trợ chuyển C#, kiểm tra dữ liệu và báo cáo Excel.",
+      "scope": "Legacy JSP screens → C# Application/Infrastructure → PostgreSQL → Excel report output",
+      "techDescription": "Java, JSP, C#, .NET, PostgreSQL, SQL, Excel template, Git.",
+      "architectureDescription": "Luồng từ JSP legacy qua phân tích logic, mapping database, triển khai C#/.NET, so sánh kết quả và xuất Excel. PostgreSQL là nguồn dữ liệu chung giữa hai hệ thống.",
+      "responsibilities": {
+        "r1": "Đọc và phân tích source JSP cũ để xác định luồng nghiệp vụ.",
+        "r2": "Xác định bảng PostgreSQL và query liên quan từng chức năng.",
+        "r3": "So sánh logic giữa hệ thống cũ và hệ thống mới.",
+        "r4": "Hỗ trợ chuyển đổi chức năng từ JSP sang C#.",
+        "r5": "Kiểm tra điều kiện phân quyền, thông báo lỗi và popup.",
+        "r6": "Kiểm tra query và dữ liệu đầu ra sau migration.",
+        "r7": "Hỗ trợ tạo/kiểm tra báo cáo Excel — ví dụ 帳票_個人日報一覧 / Personal Daily Report List.",
+        "r8": "Viết hoặc cập nhật tài liệu nghiệp vụ và case khác biệt logic."
+      },
+      "highlights": {
+        "h1": "Migration tập trung nghiệp vụ — không chỉ chuyển syntax Java → C#.",
+        "h2": "Kiểm tra báo cáo Excel 帳票_個人日報一覧 / Personal Daily Report List theo nhân viên và tháng.",
+        "h3": "So sánh có hệ thống giữa output cũ/mới cho query và tổng hợp dữ liệu."
+      },
+      "challenges": {
+        "c1": "Logic JSP lẫn trong view khiến việc tách nghiệp vụ mất thời gian.",
+        "c2": "Báo cáo Excel nhiều worksheet và tổng hợp theo tháng dễ lệch số liệu.",
+        "c3": "Edge case phân quyền và session khó tái hiện nếu thiếu dữ liệu test."
+      },
+      "solutions": {
+        "s1": "Vẽ luồng input/output và bảng DB trước khi viết C#.",
+        "s2": "So sánh file Excel cũ/mới từng worksheet và tổng theo tháng.",
+        "s3": "Ghi lại mọi khác biệt logic để review với mentor/BA."
+      },
+      "results": {
+        "res1": "Chức năng WMS migration hoạt động khớp logic nghiệp vụ cũ.",
+        "res2": "Báo cáo Excel xuất đúng cấu trúc và số liệu mong đợi.",
+        "res3": "Tài liệu nghiệp vụ được cập nhật phục vụ bảo trì sau migration."
+      },
+      "learnings": {
+        "l1": "Migration WMS cần hiểu báo cáo và aggregation, không chỉ CRUD.",
+        "l2": "Comparison testing là bước bắt buộc khi thay stack backend.",
+        "l3": "Ghi chú khác biệt logic giúp giảm regression sau go-live."
+      },
+      "process": {
+        "jsp": "Đọc & phân tích JSP legacy",
+        "logic": "Trích xuất business logic",
+        "db": "Mapping PostgreSQL",
+        "csharp": "Triển khai C#/.NET",
+        "compare": "So sánh hệ thống cũ/mới",
+        "excel": "Kiểm tra xuất Excel"
+      }
+    },
+    "learnova": {
+      "shortDescription": "Nền tảng học trực tuyến cá nhân với HLS streaming, CloudFront, PayOS webhook và quản lý doanh thu/hoa hồng — xây dựng cho portfolio demo.",
+      "overview": "LearnOva Online Learning Platform là dự án cá nhân full-stack: quản lý khóa học, phát video HLS, thanh toán PayOS và logic doanh thu giữa nền tảng và giảng viên. Các tính năng được xây dựng thực tế cho portfolio demo; một số phần vẫn có thể mở rộng thêm.",
+      "context": "Dự án cá nhân nhằm thực hành stack React + Spring Boot + PostgreSQL + AWS (S3, MediaConvert, CloudFront) và tích hợp thanh toán PayOS với webhook cập nhật trạng thái.",
+      "problems": {
+        "p1": "Video gốc lớn, cần pipeline chuyển HLS và phân phối qua CDN.",
+        "p2": "Thanh toán online cần xử lý webhook và trường hợp UI lỗi sau khi thanh toán thành công.",
+        "p3": "Logic doanh thu và hoa hồng giảng viên cần rõ ràng và có thể kiểm tra.",
+        "p4": "Full-stack demo cần cân bằng phạm vi tính năng và thời gian phát triển.",
+        "p5": "Đa ngôn ngữ và quản lý nội dung học tập cần cấu trúc dữ liệu nhất quán."
+      },
+      "goals": {
+        "g1": "Xây dựng luồng đăng ký/đăng nhập và quản lý khóa học.",
+        "g2": "Phát video HLS qua CloudFront sau khi convert bằng MediaConvert.",
+        "g3": "Tích hợp PayOS và webhook cập nhật trạng thái thanh toán.",
+        "g4": "Quản lý doanh thu và tính hoa hồng giảng viên.",
+        "g5": "Triển khai demo portfolio với Docker và tài liệu rõ ràng."
+      },
+      "role": "Full-stack Developer — thiết kế API, frontend React, pipeline video và tích hợp thanh toán.",
+      "scope": "React Frontend → Spring Boot API → PostgreSQL → S3/MediaConvert/CloudFront → PayOS Webhook",
+      "techDescription": "React, Vite, Java, Spring Boot, PostgreSQL, HLS.js, AWS S3, CloudFront, MediaConvert, PayOS, Docker.",
+      "architectureDescription": "Frontend React gọi Spring Boot API; video upload lên S3, convert HLS qua MediaConvert, phát qua CloudFront. PayOS webhook cập nhật order và kích hoạt logic doanh thu.",
+      "responsibilities": {
+        "r1": "Thiết kế schema PostgreSQL cho user, course, payment và revenue.",
+        "r2": "Xây dựng REST API Spring Boot cho auth, course và payment.",
+        "r3": "Tích hợp HLS.js trên React và pipeline upload/convert video.",
+        "r4": "Cấu hình S3, MediaConvert và CloudFront cho streaming.",
+        "r5": "Tích hợp PayOS và xử lý webhook cập nhật trạng thái.",
+        "r6": "Implement logic doanh thu và hoa hồng giảng viên.",
+        "r7": "Xử lý edge case: thanh toán thành công nhưng UI gặp lỗi.",
+        "r8": "Docker hóa và chuẩn bị demo cho portfolio."
+      },
+      "highlights": {
+        "h1": "Video HLS + CloudFront — thực hành streaming production-like trên AWS.",
+        "h2": "PayOS webhook và luồng cập nhật trạng thái thanh toán tin cậy.",
+        "h3": "Logic doanh thu/hoa hồng phản ánh bài toán marketplace thực tế."
+      },
+      "challenges": {
+        "c1": "Pipeline MediaConvert và CDN cần cấu hình đúng quyền và URL.",
+        "c2": "Webhook payment cần idempotent và xử lý retry.",
+        "c3": "Đồng bộ trạng thái UI khi callback payment chậm hoặc tab đóng sớm."
+      },
+      "solutions": {
+        "s1": "Tách bước upload, convert và publish manifest HLS rõ ràng.",
+        "s2": "Lưu payment intent và xác nhận qua webhook trước khi unlock course.",
+        "s3": "Polling/refresh trạng thái order khi user quay lại sau thanh toán."
+      },
+      "results": {
+        "res1": "Demo portfolio có luồng mua khóa học và xem video HLS end-to-end.",
+        "res2": "PayOS webhook cập nhật order và revenue đúng trạng thái.",
+        "res3": "Kiến trúc full-stack có thể mở rộng thêm tính năng giảng viên."
+      },
+      "learnings": {
+        "l1": "Streaming không chỉ là frontend — cần hiểu storage, transcode và CDN.",
+        "l2": "Payment integration phải thiết kế cho failure và duplicate webhook.",
+        "l3": "Dự án cá nhân hiệu quả khi chọn bài toán gần production thật."
+      },
+      "process": {
+        "auth": "Auth & quản lý người dùng",
+        "course": "Quản lý khóa học & nội dung",
+        "video": "Upload, HLS convert & CloudFront",
+        "pay": "PayOS & webhook thanh toán",
+        "revenue": "Doanh thu & hoa hồng"
+      }
+    }
+  }
+}

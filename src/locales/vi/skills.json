@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Kỹ năng | {{name}}",
+    "description": "Kỹ năng lập trình, backend, database, cloud và nghiệp vụ migration được tích lũy qua dự án thực tế và dự án cá nhân."
+  },
+  "eyebrow": "Technical Skills",
+  "title": "Kỹ năng chuyên môn",
+  "description": "Các kỹ năng được nhóm theo lĩnh vực và mức độ sử dụng thực tế — không đánh giá bằng phần trăm mà dựa trên dự án đã tham gia.",
+  "levels": {
+    "project": "Đã sử dụng trong dự án",
+    "practical": "Có kinh nghiệm thực hành",
+    "learning": "Đang học và phát triển"
+  },
+  "categories": {
+    "language": "Ngôn ngữ lập trình",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "cloud": "Cloud & hạ tầng",
+    "tool": "Công cụ",
+    "business": "Kỹ năng nghiệp vụ"
+  },
+  "map": {
+    "title": "Bản đồ kỹ năng theo hành trình",
+    "description": "Từ đọc source JSP/BHT-BASIC, viết API Spring Boot đến triển khai HLS trên AWS — mỗi nhóm kỹ năng gắn với dự án cụ thể trong portfolio."
+  }
+}

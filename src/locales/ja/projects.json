@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "プロジェクト | {{name}}",
+    "description": "Handy Terminal System Migration、Legacy JSP to C# WMS Migration、個人プロジェクト LearnOva Online Learning Platform。"
+  },
+  "eyebrow": "Projects",
+  "title": "プロジェクト",
+  "description": "Handy端末とレガシーWMSのマイグレーションからフルスタック学習プラットフォームまで — 各プロジェクトは Problem → Analysis → Solution → Result のストーリー。",
+  "filters": {
+    "all": "すべて",
+    "migration": "Migration",
+    "web": "Web Application",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloud": "Cloud"
+  },
+  "empty": "選択したフィルターに一致するプロジェクトがありません。",
+  "sections": {
+    "overview": "概要",
+    "context": "背景",
+    "problems": "課題",
+    "goals": "目標",
+    "role": "役割",
+    "scope": "範囲",
+    "tech": "技術",
+    "architecture": "システム構成",
+    "process": "プロセス",
+    "challenges": "困難",
+    "solutions": "解決策",
+    "results": "成果",
+    "learnings": "学び",
+    "before": "Before",
+    "migration": "Migration",
+    "after": "After",
+    "nextProject": "次のプロジェクト",
+    "prevProject": "前のプロジェクト"
+  },
+  "items": {
+    "handy": {
+      "shortDescription": "Handyシステムを BHT-OS/BHT-BASIC から Android + VB.NET PC通信へ移行。サーバーとDBは維持。",
+      "overview": "Handy Terminal System Migration は、専用 BHT プラットフォームから Keyence BT-A1000 上の Android へハンディアプリを移行し、PC Communication アプリを VB.NET で更新します。既存サーバーとDBを維持し、業務挙動を変えません。",
+      "context": "旧システムは BHT-OS と BHT-BASIC を使用する専用 BHT 端末で稼働。Handy アプリは PC Communication アプリ経由で本番サーバーとDBに接続していました。",
+      "problems": {
+        "p1": "BHT 専用プラットフォームで拡張・最新技術連携が困難。",
+        "p2": "BHT-BASIC ソースの保守が難しく、老朽ハードウェアに依存。",
+        "p3": "BHT 端末のサポート終了によりハードウェア交換が困難。",
+        "p4": "Handy ↔ PC ↔ Server の通信フローを移行後も維持する必要。",
+        "p5": "挙動比較なしのコード移行は業務不一致のリスク。"
+      },
+      "goals": {
+        "g1": "Handy アプリを Keyence BT-A1000 上の Android へ移行。",
+        "g2": "PC Communication アプリを VB.NET で更新。",
+        "g3": "既存サーバーとDBを変更しない。",
+        "g4": "業務フローと運用手順を維持。",
+        "g5": "移行後も全層で安定したデータ送受信を確保。"
+      },
+      "role": "Software Developer Intern — レガシー分析、機能移行支援、データフロー検証。",
+      "scope": "Android Handy App ↔ VB.NET Communication App ↔ Existing Server / Database",
+      "techDescription": "Android, VB.NET, BHT-BASIC, Keyence BT-A1000, Existing Server, Existing Database.",
+      "architectureDescription": "Android Handy が VB.NET PC アプリと通信し、PC アプリが既存サーバー/DBに接続。サーバー層を維持してマイグレーションリスクを低減。",
+      "responsibilities": {
+        "r1": "BHT-BASIC ソースと旧端末の処理フロー調査。",
+        "r2": "Handy、PC、サーバー間のデータ送受信フロー分析。",
+        "r3": "旧システム挙動と業務要件の照合。",
+        "r4": "Android アプリへの機能変換支援。",
+        "r5": "VB.NET による PC 側通信ロジック調整。",
+        "r6": "各機能移行後のエンドツーエンドデータフロー検証。",
+        "r7": "移行前と同等の業務挙動の確保。",
+        "r8": "Keyence BT-A1000 でのテスト支援。"
+      },
+      "highlights": {
+        "h1": "言語変更以上 — 端末・プラットフォーム変更しつつ運用フローを維持。",
+        "h2": "レガシーサーバー/DBを再利用し、インフラ変更範囲を限定。",
+        "h3": "Android/VB.NET ロジック確定前の挙動比較プロセス。"
+      },
+      "challenges": {
+        "c1": "BHT-BASIC ソースが読みにくく、標準化された文書が不足。",
+        "c2": "新 Android と VB.NET PC アプリを旧プロトコルに合わせる必要。",
+        "c3": "実機 Keyence と本番に近い環境でのテスト依存。"
+      },
+      "solutions": {
+        "s1": "旧画面/機能ごとに入出力を追跡・記録。",
+        "s2": "業務フロー単位の小さな移行と段階的検証。",
+        "s3": "BT-A1000 テストと旧システムとのデータログ比較。"
+      },
+      "results": {
+        "res1": "Handy 機能が Android に移行し、旧システムと同等の挙動。",
+        "res2": "VB.NET PC Communication が新端末で安定稼働。",
+        "res3": "サーバー/DB 変更なしでダウンタイムとリスクを低減。"
+      },
+      "learnings": {
+        "l1": "端末マイグレーションは UI だけでなくプロトコルと業務理解が必要。",
+        "l2": "サーバー層維持はクライアント変更時のテスト範囲を狭める。",
+        "l3": "挙動比較メモはマイグレーションチームの重要資産。"
+      },
+      "process": {
+        "legacy": "BHT-BASIC ソース・旧端末読解",
+        "analysis": "業務フロー分析",
+        "convert": "Android への機能変換",
+        "pc": "VB.NET PC 通信調整",
+        "test": "Keyence BT-A1000 テスト"
+      }
+    },
+    "wms": {
+      "shortDescription": "WMS 機能を JSP から C#/.NET へ移行。業務・データ・Excel レポートを検証し新システムを旧システムに一致させる。",
+      "overview": "Legacy JSP to C# WMS Migration は、倉庫管理機能を Java/JSP から Application/Infrastructure 分離の C#/.NET へ移行。業務ロジック、PostgreSQL データ、Excel 出力精度の維持が焦点。",
+      "context": "旧システムは Java/JSP、レガシーソース内の業務ロジック、Excel テンプレート、PostgreSQL。新システムは C#/.NET のレイヤード構成で同一 PostgreSQL を使用。",
+      "problems": {
+        "p1": "JSP に散在する業務ロジックの追跡・再利用が困難。",
+        "p2": "業務理解なしの Java→C# 構文変換は不一致リスク。",
+        "p3": "Excel レポートはテンプレートと月次集計に依存。",
+        "p4": "権限、エラーポップアップ、エッジケースはハッピーパスのみでは見逃す。",
+        "p5": "新旧出力の継続的比較が必要。"
+      },
+      "goals": {
+        "g1": "WMS 範囲で JSP 機能を C#/.NET へ移行。",
+        "g2": "業務フロー、権限、エラー処理を維持。",
+        "g3": "関連 PostgreSQL テーブルとクエリを正確にマップ。",
+        "g4": "Excel（.xlsx）レポートがレガシー出力と一致。",
+        "g5": "業務文書とロジック差異メモを更新。"
+      },
+      "role": "Software Developer Intern — JSP 分析、C# 移行支援、データ・Excel 検証。",
+      "scope": "Legacy JSP screens → C# Application/Infrastructure → PostgreSQL → Excel report output",
+      "techDescription": "Java, JSP, C#, .NET, PostgreSQL, SQL, Excel template, Git.",
+      "architectureDescription": "レガシー JSP からロジック分析、DB マッピング、C#/.NET 実装、比較テスト、Excel 出力まで。PostgreSQL は両システム共通のデータソース。",
+      "responsibilities": {
+        "r1": "レガシー JSP ソース読解と業務フロー特定。",
+        "r2": "機能ごとの PostgreSQL テーブル・クエリ特定。",
+        "r3": "新旧システム間のロジック比較。",
+        "r4": "JSP から C# への機能変換支援。",
+        "r5": "権限条件、エラーメッセージ、ポップアップの検証。",
+        "r6": "移行後のクエリと出力データの確認。",
+        "r7": "Excel レポート作成/検証支援 — 例：帳票_個人日報一覧 / Personal Daily Report List。",
+        "r8": "業務文書とロジック差異ケースの作成・更新。"
+      },
+      "highlights": {
+        "h1": "業務中心のマイグレーション — Java→C# 構文変換だけではない。",
+        "h2": "帳票_個人日報一覧 / Personal Daily Report List の従業員・月別 Excel 検証。",
+        "h3": "クエリと集計データの体系的な新旧出力比較。"
+      },
+      "challenges": {
+        "c1": "JSP に混在するロジックの業務抽出に時間がかかる。",
+        "c2": "複数ワークシートと月次合計の Excel は数値ずれが起きやすい。",
+        "c3": "権限・セッションのエッジケースはテストデータ不足で再現困難。"
+      },
+      "solutions": {
+        "s1": "C# 実装前に入出力フローと DB テーブルをマップ。",
+        "s2": "新旧 Excel をワークシート・月次合計ごとに比較。",
+        "s3": "すべてのロジック差異をメンター/BA とレビュー用に記録。"
+      },
+      "results": {
+        "res1": "移行 WMS 機能がレガシー業務ロジックと一致。",
+        "res2": "Excel レポートが正しい構造と数値で出力。",
+        "res3": "更新された業務文書が移行後保守を支援。"
+      },
+      "learnings": {
+        "l1": "WMS マイグレーションは CRUD だけでなくレポートと集計理解が必要。",
+        "l2": "バックエンドスタック変更時は比較テストが必須。",
+        "l3": "ロジック差異メモは go-live 後の回帰リスクを低減。"
+      },
+      "process": {
+        "jsp": "レガシー JSP 読解・分析",
+        "logic": "業務ロジック抽出",
+        "db": "PostgreSQL マッピング",
+        "csharp": "C#/.NET 実装",
+        "compare": "新旧比較",
+        "excel": "Excel 出力検証"
+      }
+    },
+    "learnova": {
+      "shortDescription": "HLS、CloudFront、PayOS webhook、収益/手数料ロジックを備えた個人学習プラットフォーム — ポートフォリオデモとして構築。",
+      "overview": "LearnOva Online Learning Platform はフルスタック個人プロジェクト：コース管理、HLS 動画再生、PayOS 決済、プラットフォームと講師間の収益ロジック。ポートフォリオ用デモとして実装；一部は拡張可能。",
+      "context": "React + Spring Boot + PostgreSQL + AWS（S3、MediaConvert、CloudFront）と PayOS webhook による決済状態更新を実践する個人プロジェクト。",
+      "problems": {
+        "p1": "大容量動画には HLS 変換パイプラインと CDN 配信が必要。",
+        "p2": "オンライン決済は webhook と決済成功後の UI 障害への対応が必要。",
+        "p3": "収益と講師手数料ロジックは明確で検証可能である必要。",
+        "p4": "フルスタックデモは機能範囲と開発時間のバランスが課題。",
+        "p5": "多言語と学習コンテンツには一貫したデータ構造が必要。"
+      },
+      "goals": {
+        "g1": "登録/ログインとコース管理フローの構築。",
+        "g2": "MediaConvert 後 CloudFront 経由で HLS 配信。",
+        "g3": "PayOS 連携と決済状態更新 webhook。",
+        "g4": "収益と講師手数料計算の管理。",
+        "g5": "Docker と明確な文書でポートフォリオデモをデプロイ。"
+      },
+      "role": "Full-stack Developer — API 設計、React フロント、動画パイプライン、決済連携。",
+      "scope": "React Frontend → Spring Boot API → PostgreSQL → S3/MediaConvert/CloudFront → PayOS Webhook",
+      "techDescription": "React, Vite, Java, Spring Boot, PostgreSQL, HLS.js, AWS S3, CloudFront, MediaConvert, PayOS, Docker.",
+      "architectureDescription": "React が Spring Boot API を呼び出し；動画は S3 にアップロード、MediaConvert で HLS 変換、CloudFront で配信。PayOS webhook が注文更新と収益ロジックを起動。",
+      "responsibilities": {
+        "r1": "ユーザー、コース、決済、収益用 PostgreSQL スキーマ設計。",
+        "r2": "認証、コース、決済用 Spring Boot REST API 構築。",
+        "r3": "React 上の HLS.js 統合とアップロード/変換パイプライン。",
+        "r4": "ストリーミング用 S3、MediaConvert、CloudFront 設定。",
+        "r5": "PayOS 連携と webhook 状態更新処理。",
+        "r6": "収益・講師手数料ロジック実装。",
+        "r7": "決済成功後 UI エラーのエッジケース処理。",
+        "r8": "Docker 化とポートフォリオデモ準備。"
+      },
+      "highlights": {
+        "h1": "HLS + CloudFront — AWS 上の本番に近いストリーミング実践。",
+        "h2": "信頼性の高い PayOS webhook 決済状態更新フロー。",
+        "h3": "実際のマーケットプレイス問題を反映した収益/手数料ロジック。"
+      },
+      "challenges": {
+        "c1": "MediaConvert パイプラインと CDN の権限・URL 設定。",
+        "c2": "決済 webhook の冪等性とリトライ処理。",
+        "c3": "コールバック遅延やタブ早期終了時の UI 状態同期。"
+      },
+      "solutions": {
+        "s1": "アップロード、変換、HLS マニフェスト公開を明確に分離。",
+        "s2": "コース解放前に webhook で決済 intent を確認。",
+        "s3": "決済後に戻ったユーザー向けの注文状態ポーリング/更新。"
+      },
+      "results": {
+        "res1": "コース購入から HLS 再生までのエンドツーエンドデモ。",
+        "res2": "PayOS webhook が注文と収益を正しい状態に更新。",
+        "res3": "講師機能拡張可能なフルスタック構成。"
+      },
+      "learnings": {
+        "l1": "ストリーミングはフロントだけでなくストレージ、変換、CDN が重要。",
+        "l2": "決済連携は障害と重複 webhook を想定した設計が必要。",
+        "l3": "本番に近い問題を選ぶ個人プロジェクトが最も効果的。"
+      },
+      "process": {
+        "auth": "認証・ユーザー管理",
+        "course": "コース・コンテンツ管理",
+        "video": "アップロード、HLS 変換、CloudFront",
+        "pay": "PayOS・決済 webhook",
+        "revenue": "収益・手数料"
+      }
+    }
+  }
+}

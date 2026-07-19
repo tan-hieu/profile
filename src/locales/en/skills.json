@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Skills | {{name}}",
+    "description": "Programming, backend, database, cloud, and migration skills built through real projects and personal work."
+  },
+  "eyebrow": "Technical Skills",
+  "title": "Professional skills",
+  "description": "Skills grouped by domain and practical usage level — no arbitrary percentages, only experience grounded in projects.",
+  "levels": {
+    "project": "Used in projects",
+    "practical": "Practical experience",
+    "learning": "Learning & growing"
+  },
+  "categories": {
+    "language": "Programming languages",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "cloud": "Cloud & infrastructure",
+    "tool": "Tools",
+    "business": "Business skills"
+  },
+  "map": {
+    "title": "Skill map across the journey",
+    "description": "From reading JSP/BHT-BASIC source and writing Spring Boot APIs to deploying HLS on AWS — each skill group ties to a concrete project in this portfolio."
+  }
+}

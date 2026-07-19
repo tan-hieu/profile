@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title": "自己紹介 | {{name}}",
+    "description": "GOLINE GLOBAL と RIKAI TECHNOLOGY でのレガシーマイグレーション、業務分析、マルチプラットフォーム開発経験を持つ Backend Developer。"
+  },
+  "eyebrow": "About Me",
+  "title": "自己紹介",
+  "intro": "実際のマイグレーション業務を通じてバックエンド基盤を築いている Backend Developer です。新規コードから始めるのではなく、レガシーソースの読解、業務フローの把握、マイグレーション後も旧システムと同じ動作を保つことを重視しています。",
+  "education": {
+    "title": "学歴",
+    "body": "オブジェクト指向プログラミング、データベース、Web開発の基礎を学びました。学業と並行してバックエンドインターンと LearnOva Online Learning Platform などの個人プロジェクトで実務経験を積みました。"
+  },
+  "direction": {
+    "title": "キャリアの方向性",
+    "body": "システムマイグレーション、業務分析、API連携を強みとする Backend Developer として成長します。短期：レガシーから .NET/Java への近代化プロジェクトに貢献。長期：業務フローとシステムアーキテクチャの両方を深く理解するエンジニアを目指します。"
+  },
+  "strengths": {
+    "title": "強み",
+    "description": "マイグレーション業務とインターンシップから培った強み — 一般的な自己PRではありません。",
+    "legacy": {
+      "title": "レガシーソースの読解",
+      "body": "BHT-BASIC、JSP、VB.NET のソースから分岐ロジックとサーバー連携ポイントを追跡し、新コードを書く前に理解できます。"
+    },
+    "business": {
+      "title": "業務フロー分析",
+      "body": "BA資料、旧画面、ソース内ロジックを照合し、入出力、権限、エッジケースをマイグレーション前に特定します。"
+    },
+    "multitech": {
+      "title": "マルチテクノロジー対応",
+      "body": "プロジェクトごとに Android、VB.NET、Java/JSP、C#/.NET、PostgreSQL、Spring Boot を使い分けます。"
+    },
+    "verification": {
+      "title": "データ・ロジック検証",
+      "body": "クエリ結果、Excel出力、エラー/ポップアップの挙動を新旧システムで比較し、差異を早期に発見します。"
+    },
+    "learning": {
+      "title": "新技術の迅速な習得",
+      "body": "HLSストリーミング、AWS CloudFront、PayOS webhook など、プロジェクトや個人開発で必要な技術を自習します。"
+    },
+    "migration": {
+      "title": "マイグレーション時の業務正確性",
+      "body": "構文変換より業務挙動と出力精度を優先 — 特に Excel レポートと Handy 端末フローにおいて。"
+    }
+  },
+  "workStyle": {
+    "title": "働き方",
+    "body": "問題と業務フローを理解してからコードを書きます。新旧ロジックの差異を記録し、技術文書を更新し、マイグレーション後のテストに協力します。"
+  },
+  "interests": {
+    "title": "専門的な関心",
+    "body": "マイグレーションアーキテクチャ、レガシーコード読解、API設計、DBマッピング、決済とストリーミングを含むフルスタック製品の構築。"
+  },
+  "timeline": {
+    "title": "学習・インターンタイムライン",
+    "study": {
+      "period": "大学",
+      "title": "IT・プログラミング基礎",
+      "body": "プログラミング、データベース、Web開発を学び、課題と個人プロジェクトを完了しました。"
+    },
+    "goline": {
+      "period": "インターン",
+      "title": "GOLINE GLOBAL — Backend Developer DEV",
+      "body": "Handy Terminal System Migration と Legacy JSP to C# WMS Migration に参画：レガシー読解、業務分析、機能移行支援、データ検証。"
+    },
+    "rikai": {
+      "period": "インターン",
+      "title": "RIKAI TECHNOLOGY — Backend Developer DEV",
+      "body": "Java/Spring Boot でのバックエンドインターン：プロジェクト構造、API開発、DB作業、技術文書。"
+    },
+    "personal": {
+      "period": "継続中",
+      "title": "個人プロジェクト",
+      "body": "LearnOva Online Learning Platform と本 Developer Journey ポートフォリオでフルスタック、HLS、決済、クラウドを実践。"
+    }
+  }
+}

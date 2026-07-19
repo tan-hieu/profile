@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Kinh nghiệm | {{name}}",
+    "description": "Kinh nghiệm thực tập backend tại GOLINE GLOBAL và RIKAI TECHNOLOGY, tập trung migration hệ thống legacy và phát triển API."
+  },
+  "eyebrow": "Experience",
+  "title": "Kinh nghiệm làm việc",
+  "description": "Timeline thực tập thể hiện công việc cụ thể — từ đọc source legacy, phân tích nghiệp vụ đến hỗ trợ migration và kiểm tra sau triển khai.",
+  "items": {
+    "goline": {
+      "summary": "Tham gia hai dự án migration tại GOLINE GLOBAL: tìm hiểu hệ thống cũ, đọc tài liệu nghiệp vụ, phân tích source, so sánh logic cũ/mới, hỗ trợ chuyển đổi chức năng, kiểm tra dữ liệu và kết quả đầu ra, làm việc với C#/VB.NET/Java/JSP/PostgreSQL, viết tài liệu kỹ thuật và hỗ trợ xử lý lỗi sau migration.",
+      "r1": "Tìm hiểu hệ thống legacy (BHT-BASIC, JSP) và kiến trúc server/database hiện có.",
+      "r2": "Đọc và đối chiếu tài liệu nghiệp vụ (BA) với hành vi thực tế trên màn hình cũ.",
+      "r3": "Phân tích source code hiện tại để xác định luồng xử lý, điều kiện và điểm tích hợp.",
+      "r4": "So sánh logic giữa hệ thống cũ và hệ thống mới trước/sau khi chuyển đổi chức năng.",
+      "r5": "Hỗ trợ migration chức năng sang Android, VB.NET và C#/.NET theo phạm vi được giao.",
+      "r6": "Kiểm tra dữ liệu, query PostgreSQL và kết quả xuất báo cáo Excel (.xlsx).",
+      "r7": "Viết hoặc cập nhật tài liệu kỹ thuật và ghi chú khác biệt logic.",
+      "r8": "Hỗ trợ kiểm tra lỗi sau migration và test trên thiết bị Keyence BT-A1000."
+    },
+    "rikai": {
+      "summary": "Thực tập backend tại RIKAI TECHNOLOGY với Java/Spring Boot: làm quen cấu trúc dự án, tham gia phát triển API, truy vấn database, viết tài liệu và học quy trình làm việc nhóm.",
+      "r1": "Làm quen cấu trúc dự án Spring Boot, layer controller/service/repository.",
+      "r2": "Hỗ trợ phát triển và chỉnh sửa REST API theo yêu cầu mentor.",
+      "r3": "Viết và kiểm tra SQL query, mapping entity và xử lý dữ liệu cơ bản.",
+      "r4": "Sử dụng Git/GitHub để quản lý branch, commit và review code nội bộ.",
+      "r5": "Kiểm thử API bằng Postman và ghi lại case test đơn giản.",
+      "r6": "Cập nhật tài liệu kỹ thuật và ghi chú endpoint cho các chức năng đã làm."
+    }
+  },
+  "presentLabel": "Hiện tại / Hoàn thành"
+}

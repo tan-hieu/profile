@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "프로젝트 | {{name}}",
+    "description": "Handy Terminal System Migration, Legacy JSP to C# WMS Migration, 개인 프로젝트 LearnOva Online Learning Platform."
+  },
+  "eyebrow": "Projects",
+  "title": "프로젝트",
+  "description": "Handy 단말과 레거시 WMS 마이그레이션부터 풀스택 학습 플랫폼까지 — 각 프로젝트는 Problem → Analysis → Solution → Result 스토리.",
+  "filters": {
+    "all": "전체",
+    "migration": "Migration",
+    "web": "Web Application",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "cloud": "Cloud"
+  },
+  "empty": "선택한 필터에 맞는 프로젝트가 없습니다.",
+  "sections": {
+    "overview": "개요",
+    "context": "배경",
+    "problems": "문제",
+    "goals": "목표",
+    "role": "역할",
+    "scope": "범위",
+    "tech": "기술",
+    "architecture": "시스템 아키텍처",
+    "process": "프로세스",
+    "challenges": "어려움",
+    "solutions": "해결",
+    "results": "결과",
+    "learnings": "배운 점",
+    "before": "Before",
+    "migration": "Migration",
+    "after": "After",
+    "nextProject": "다음 프로젝트",
+    "prevProject": "이전 프로젝트"
+  },
+  "items": {
+    "handy": {
+      "shortDescription": "Handy 시스템을 BHT-OS/BHT-BASIC 에서 Android + VB.NET PC 통신으로 마이그레이션. 서버와 DB 유지.",
+      "overview": "Handy Terminal System Migration 은 전용 BHT 플랫폼에서 Keyence BT-A1000 Android 로 핸디 앱을 옮기고 PC Communication 앱을 VB.NET 으로 업데이트합니다. 기존 서버와 DB를 유지하여 업무 동작을 바꾸지 않습니다.",
+      "context": "구 시스템은 BHT-OS 와 BHT-BASIC 을 사용하는 전용 BHT 단말에서 운영. Handy 앱은 PC Communication 앱을 거쳐 운영 서버와 DB에 연결.",
+      "problems": {
+        "p1": "BHT 전용 플랫폼으로 확장 및 최신 기술 연동이 어려움.",
+        "p2": "BHT-BASIC 소스 유지보수 어렵고 노후 하드웨어에 의존.",
+        "p3": "BHT 단말 지원 종료로 하드웨어 교체 곤란.",
+        "p4": "Handy ↔ PC ↔ Server 통신 흐름을 마이그레이션 후에도 유지해야 함.",
+        "p5": "동작 비교 없는 코드 이전은 업무 불일치 위험."
+      },
+      "goals": {
+        "g1": "Handy 앱을 Keyence BT-A1000 Android 로 이전.",
+        "g2": "PC Communication 앱을 VB.NET 으로 업데이트.",
+        "g3": "기존 서버와 DB 변경 없음.",
+        "g4": "업무 흐름과 운영 절차 유지.",
+        "g5": "마이그레이션 후 모든 계층에서 안정적 데이터 송수신."
+      },
+      "role": "Software Developer Intern — 레거시 분석, 기능 전환 지원, 데이터 흐름 검증.",
+      "scope": "Android Handy App ↔ VB.NET Communication App ↔ Existing Server / Database",
+      "techDescription": "Android, VB.NET, BHT-BASIC, Keyence BT-A1000, Existing Server, Existing Database.",
+      "architectureDescription": "Android Handy 가 VB.NET PC 앱과 통신하고, PC 앱이 기존 서버/DB에 연결. 서버 계층 유지로 마이그레이션 리스크 감소.",
+      "responsibilities": {
+        "r1": "BHT-BASIC 소스 및 구 단말 처리 흐름 조사.",
+        "r2": "Handy, PC, 서버 간 데이터 송수신 흐름 분석.",
+        "r3": "구 시스템 동작과 업무 요구사항 대조.",
+        "r4": "Android 앱으로 기능 변환 지원.",
+        "r5": "VB.NET 으로 PC 측 통신 로직 조정.",
+        "r6": "각 기능 마이그레이션 후 end-to-end 데이터 흐름 검증.",
+        "r7": "마이그레이션 전과 동일한 업무 동작 보장.",
+        "r8": "Keyence BT-A1000 에서 테스트 지원."
+      },
+      "highlights": {
+        "h1": "언어 변경 이상 — 단말·플랫폼 교체하며 운영 흐름 유지.",
+        "h2": "레거시 서버/DB 재사용으로 인프라 변경 범위 축소.",
+        "h3": "Android/VB.NET 로직 확정 전 동작 비교 프로세스."
+      },
+      "challenges": {
+        "c1": "BHT-BASIC 소스 가독성 낮고 표준화된 문서 부족.",
+        "c2": "신규 Android 와 VB.NET PC 앱을 구 프로토콜에 맞춰야 함.",
+        "c3": "실제 Keyence 단말 및 운영에 가까운 환경에서 테스트 필요."
+      },
+      "solutions": {
+        "s1": "구 화면/기능별 입출력 추적 및 기록.",
+        "s2": "업무 흐름 단위 소규모 마이그레이션 및 단계별 검증.",
+        "s3": "BT-A1000 테스트 및 구 시스템과 데이터 로그 비교."
+      },
+      "results": {
+        "res1": "Handy 기능이 Android 로 이전되어 구 시스템과 동일 동작.",
+        "res2": "VB.NET PC Communication 이 신규 단말에서 안정 동작.",
+        "res3": "서버/DB 변경 없이 다운타임 및 리스크 감소."
+      },
+      "learnings": {
+        "l1": "단말 마이그레이션은 UI 뿐 아니라 프로토콜과 업무 이해 필요.",
+        "l2": "서버 계층 유지는 클라이언트 변경 시 테스트 범위 축소.",
+        "l3": "동작 비교 메모는 마이그레이션 팀의 중요 자산."
+      },
+      "process": {
+        "legacy": "BHT-BASIC 소스·구 단말 읽기",
+        "analysis": "업무 흐름 분석",
+        "convert": "Android 기능 변환",
+        "pc": "VB.NET PC 통신 조정",
+        "test": "Keyence BT-A1000 테스트"
+      }
+    },
+    "wms": {
+      "shortDescription": "WMS 기능을 JSP 에서 C#/.NET 으로 마이그레이션. 업무·데이터·Excel 보고서 검증으로 신 시스템을 구 시스템과 일치.",
+      "overview": "Legacy JSP to C# WMS Migration 은 창고 관리 기능을 Java/JSP 에서 Application/Infrastructure 분리 C#/.NET 으로 이전. 업무 로직, PostgreSQL 데이터, Excel 출력 정확도 유지가 핵심.",
+      "context": "구 시스템: Java/JSP, 레거시 소스 내 업무 로직, Excel 템플릿, PostgreSQL. 신 시스템: C#/.NET 레이어드 구조, 동일 PostgreSQL.",
+      "problems": {
+        "p1": "JSP 에 흩어진 업무 로직 추적·재사용 어려움.",
+        "p2": "업무 이해 없는 Java→C# 구문 변환은 불일치 위험.",
+        "p3": "Excel 보고서는 템플릿과 월별 집계에 의존.",
+        "p4": "happy path 만 테스트하면 권한·오류 팝업·엣지 케이스 누락.",
+        "p5": "구/신 출력 지속적 비교 필요."
+      },
+      "goals": {
+        "g1": "WMS 범위에서 JSP 기능을 C#/.NET 으로 마이그레이션.",
+        "g2": "업무 흐름, 권한, 오류 처리 유지.",
+        "g3": "관련 PostgreSQL 테이블·쿼리 정확히 매핑.",
+        "g4": "Excel(.xlsx) 보고서가 레거시 출력과 일치.",
+        "g5": "업무 문서 및 로직 차이 메모 업데이트."
+      },
+      "role": "Software Developer Intern — JSP 분석, C# 전환 지원, 데이터·Excel 검증.",
+      "scope": "Legacy JSP screens → C# Application/Infrastructure → PostgreSQL → Excel report output",
+      "techDescription": "Java, JSP, C#, .NET, PostgreSQL, SQL, Excel template, Git.",
+      "architectureDescription": "레거시 JSP → 로직 분석 → DB 매핑 → C#/.NET 구현 → 비교 테스트 → Excel 출력. PostgreSQL 은 두 시스템 공통 데이터 소스.",
+      "responsibilities": {
+        "r1": "레거시 JSP 소스 읽기 및 업무 흐름 파악.",
+        "r2": "기능별 PostgreSQL 테이블·쿼리 식별.",
+        "r3": "구/신 시스템 로직 비교.",
+        "r4": "JSP 에서 C# 으로 기능 변환 지원.",
+        "r5": "권한 조건, 오류 메시지, 팝업 검증.",
+        "r6": "마이그레이션 후 쿼리 및 출력 데이터 확인.",
+        "r7": "Excel 보고서 생성/검증 지원 — 예: 帳票_個人日報一覧 / Personal Daily Report List.",
+        "r8": "업무 문서 및 로직 차이 케이스 작성/업데이트."
+      },
+      "highlights": {
+        "h1": "업무 중심 마이그레이션 — Java→C# 구문 변환만이 아님.",
+        "h2": "帳票_個人日報一覧 / Personal Daily Report List 직원·월별 Excel 검증.",
+        "h3": "쿼리 및 집계 데이터에 대한 체계적 구/신 출력 비교."
+      },
+      "challenges": {
+        "c1": "JSP 에 섞인 로직의 업무 추출에 시간 소요.",
+        "c2": "다중 워크시트·월별 합계 Excel 은 수치 drift 발생 쉬움.",
+        "c3": "권한·세션 엣지 케이스는 테스트 데이터 부족 시 재현 어려움."
+      },
+      "solutions": {
+        "s1": "C# 작성 전 입출력 흐름과 DB 테이블 매핑.",
+        "s2": "구/신 Excel 을 워크시트·월별 합계별 비교.",
+        "s3": "모든 로직 차이를 멘토/BA 와 리뷰용으로 기록."
+      },
+      "results": {
+        "res1": "마이그레이션 WMS 기능이 레거시 업무 로직과 일치.",
+        "res2": "Excel 보고서가 올바른 구조와 수치로 출력.",
+        "res3": "업데이트된 업무 문서가 마이그레이션 후 유지보수 지원."
+      },
+      "learnings": {
+        "l1": "WMS 마이그레이션은 CRUD 뿐 아니라 보고서·집계 이해 필요.",
+        "l2": "백엔드 스택 교체 시 비교 테스트 필수.",
+        "l3": "로직 차이 메모는 go-live 후 회귀 리스크 감소."
+      },
+      "process": {
+        "jsp": "레거시 JSP 읽기·분석",
+        "logic": "업무 로직 추출",
+        "db": "PostgreSQL 매핑",
+        "csharp": "C#/.NET 구현",
+        "compare": "구/신 비교",
+        "excel": "Excel 출력 검증"
+      }
+    },
+    "learnova": {
+      "shortDescription": "HLS, CloudFront, PayOS webhook, 수익/수수료 로직을 갖춘 개인 학습 플랫폼 — 포트폴리오 데모용 구축.",
+      "overview": "LearnOva Online Learning Platform 은 풀스택 개인 프로젝트: 코스 관리, HLS 영상 재생, PayOS 결제, 플랫폼·강사 간 수익 로직. 포트폴리오용 실제 데모로 구현; 일부는 확장 가능.",
+      "context": "React + Spring Boot + PostgreSQL + AWS(S3, MediaConvert, CloudFront) 및 PayOS webhook 결제 상태 업데이트를 실습하는 개인 프로젝트.",
+      "problems": {
+        "p1": "대용량 영상은 HLS 변환 파이프라인과 CDN 배포 필요.",
+        "p2": "온라인 결제는 webhook 및 결제 성공 후 UI 오류 처리 필요.",
+        "p3": "수익·강사 수수료 로직은 명확하고 검증 가능해야 함.",
+        "p4": "풀스택 데모는 기능 범위와 개발 시간 균형 필요.",
+        "p5": "다국어 및 학습 콘텐츠는 일관된 데이터 구조 필요."
+      },
+      "goals": {
+        "g1": "회원가입/로그인 및 코스 관리 흐름 구축.",
+        "g2": "MediaConvert 후 CloudFront 로 HLS 배 delivery.",
+        "g3": "PayOS 연동 및 결제 상태 webhook.",
+        "g4": "수익 및 강사 수수료 계산 관리.",
+        "g5": "Docker 와 명확한 문서로 포트폴리오 데모 배포."
+      },
+      "role": "Full-stack Developer — API 설계, React 프론트, 영상 파이프라인, 결제 연동.",
+      "scope": "React Frontend → Spring Boot API → PostgreSQL → S3/MediaConvert/CloudFront → PayOS Webhook",
+      "techDescription": "React, Vite, Java, Spring Boot, PostgreSQL, HLS.js, AWS S3, CloudFront, MediaConvert, PayOS, Docker.",
+      "architectureDescription": "React 가 Spring Boot API 호출; 영상 S3 업로드, MediaConvert HLS 변환, CloudFront 배포. PayOS webhook 이 주문 업데이트 및 수익 로직 트리거.",
+      "responsibilities": {
+        "r1": "사용자, 코스, 결제, 수익용 PostgreSQL 스키마 설계.",
+        "r2": "인증, 코스, 결제 Spring Boot REST API 구축.",
+        "r3": "React HLS.js 통합 및 업로드/변환 영상 파이프라인.",
+        "r4": "스트리밍용 S3, MediaConvert, CloudFront 설정.",
+        "r5": "PayOS 연동 및 webhook 상태 업데이트 처리.",
+        "r6": "수익·강사 수수료 로직 구현.",
+        "r7": "결제 성공 후 UI 오류 엣지 케이스 처리.",
+        "r8": "Docker 화 및 포트폴리오 데모 준비."
+      },
+      "highlights": {
+        "h1": "HLS + CloudFront — AWS 에서 production 에 가까운 스트리밍 실습.",
+        "h2": "신뢰할 수 있는 PayOS webhook 결제 상태 업데이트 흐름.",
+        "h3": "실제 marketplace 문제를 반영한 수익/수수료 로직."
+      },
+      "challenges": {
+        "c1": "MediaConvert 파이프라인과 CDN 권한·URL 설정.",
+        "c2": "결제 webhook 멱등성 및 재시도 처리.",
+        "c3": "콜백 지연 또는 탭 조기 종료 시 UI 상태 동기화."
+      },
+      "solutions": {
+        "s1": "업로드, 변환, HLS manifest 게시 단계 명확히 분리.",
+        "s2": "코스 잠금 해제 전 webhook 으로 payment intent 확인.",
+        "s3": "결제 후 돌아온 사용자용 주문 상태 폴링/갱신."
+      },
+      "results": {
+        "res1": "코스 구매부터 HLS 재생까지 end-to-end 포트폴리오 데모.",
+        "res2": "PayOS webhook 이 주문·수익을 올바른 상태로 업데이트.",
+        "res3": "강사 기능 확장 가능한 풀스택 아키텍처."
+      },
+      "learnings": {
+        "l1": "스트리밍은 프론트만이 아님 — 스토리지, 트랜scode, CDN 중요.",
+        "l2": "결제 연동은 실패·중복 webhook 을 고려한 설계 필요.",
+        "l3": "production 에 가까운 문제를 선택한 개인 프로젝트가 가장 효과적."
+      },
+      "process": {
+        "auth": "인증·사용자 관리",
+        "course": "코스·콘텐츠 관리",
+        "video": "업로드, HLS 변환, CloudFront",
+        "pay": "PayOS·결제 webhook",
+        "revenue": "수익·수수료"
+      }
+    }
+  }
+}
