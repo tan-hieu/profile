@@ -14,15 +14,15 @@ export const profile: Profile = {
 };
 
 export const journeySteps = [
-  { id: "legacy", labelKey: "journey.legacy" },
-  { id: "analysis", labelKey: "journey.analysis" },
-  { id: "migration", labelKey: "journey.migration" },
-  { id: "testing", labelKey: "journey.testing" },
-  { id: "modern", labelKey: "journey.modern" },
+  { id: "discover", labelKey: "journey.discover" },
+  { id: "design", labelKey: "journey.design" },
+  { id: "build", labelKey: "journey.build" },
+  { id: "validate", labelKey: "journey.validate" },
+  { id: "improve", labelKey: "journey.improve" },
 ] as const;
 
 export const quickStats = [
-  { id: "migrations", valueKey: "stats.migrations.value", labelKey: "stats.migrations.label" },
+  { id: "projects", valueKey: "stats.projects.value", labelKey: "stats.projects.label" },
   { id: "personal", valueKey: "stats.personal.value", labelKey: "stats.personal.label" },
   { id: "platforms", valueKey: "stats.platforms.value", labelKey: "stats.platforms.label" },
 ] as const;

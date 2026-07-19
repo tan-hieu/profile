@@ -5,7 +5,11 @@
   },
   "eyebrow": "About Me",
   "title": "About me",
-  "intro": "I am a Backend Developer building a solid backend foundation through real migration work. Rather than jumping straight into greenfield code, I usually start by reading legacy source, mapping business flows, and ensuring the post-migration system behaves like the original.",
+  "intro": "I am a Backend Developer who enjoys turning real problems into well-structured products with reliable data and a complete user experience.",
+  "portrait": {
+    "title": "I do more than write code—I shape how products work.",
+    "body": "My experience spans Java/Spring Boot, C#/.NET and PostgreSQL, as well as React, cloud video, payments, and operational business systems."
+  },
   "education": {
     "title": "Education",
     "body": "IT foundation in object-oriented programming, databases, and web development. Alongside coursework, I gained practical experience through backend internships and personal projects such as LearnOva Online Learning Platform."

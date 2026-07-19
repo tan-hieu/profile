@@ -18,7 +18,7 @@ import { getFeaturedProjects } from "@/data/projects";
 export function HomePage() {
   const { t } = useTranslation(["home", "common", "projects"]);
   const prefersReducedMotion = useReducedMotion();
-  const featured = getFeaturedProjects().slice(0, 2);
+  const featured = getFeaturedProjects().slice(0, 3);
 
   return (
       <>
@@ -78,40 +78,17 @@ export function HomePage() {
             </div>
           </motion.div>
 
-          <motion.div
-            className="relative"
-            animate={
-              prefersReducedMotion ? undefined : { y: [0, -8, 0] }
-            }
-            transition={
-              prefersReducedMotion
-                ? undefined
-                : { duration: 4, repeat: Infinity, ease: "easeInOut" }
-            }
-          >
+          <motion.div className="relative" initial={prefersReducedMotion ? false : { opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.55 }}>
             <div
               className="absolute -inset-6 rounded-[2rem] bg-[image:var(--gradient-primary)] opacity-20 blur-2xl"
               aria-hidden="true"
             />
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[0_24px_60px_var(--shadow)]">
-              <div className="mb-4 flex items-center gap-2">
-                <span className="h-3 w-3 rounded-full bg-[var(--error)]" />
-                <span className="h-3 w-3 rounded-full bg-[var(--warning)]" />
-                <span className="h-3 w-3 rounded-full bg-[var(--success)]" />
-                <span className="ml-2 font-mono text-xs text-[var(--text-secondary)]">
-                  {t("home:terminal.title")}
-                </span>
+            <div className="group relative overflow-hidden rounded-[1.5rem] border border-[var(--border)] bg-[var(--surface)] p-3 shadow-[0_24px_60px_var(--shadow)]">
+              <img src={profile.avatar} alt={profile.fullName} className="aspect-[4/5] w-full rounded-[1.1rem] bg-[var(--surface-secondary)] object-cover transition-transform duration-700 group-hover:scale-[1.025]" />
+              <div className="absolute inset-x-6 bottom-6 rounded-xl border border-white/10 bg-black/60 p-4 backdrop-blur-md">
+                <p className="font-display font-semibold text-white">{profile.fullName}</p>
+                <p className="mt-1 text-sm text-slate-300">{t("home:role")}</p>
               </div>
-              <pre className="overflow-x-auto font-mono text-sm leading-relaxed text-[var(--text-secondary)]">
-                <code>
-                  {`${t("home:terminal.line1")}
-${profile.fullName}
-
-${t("home:terminal.line2")}
-
-${t("home:terminal.line3")}`}
-                </code>
-              </pre>
             </div>
           </motion.div>
         </Container>
@@ -159,7 +136,7 @@ ${t("home:terminal.line3")}`}
             </Link>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {featured.map((project) => (
               <Link
                 key={project.id}

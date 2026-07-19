@@ -5,7 +5,11 @@
   },
   "eyebrow": "About Me",
   "title": "Giới thiệu bản thân",
-  "intro": "Tôi là Backend Developer định hướng xây dựng nền tảng backend vững chắc thông qua các dự án migration thực tế. Thay vì chỉ viết code mới, tôi thường bắt đầu bằng việc đọc source cũ, đối chiếu luồng nghiệp vụ và đảm bảo hệ thống sau migration hoạt động giống hệ thống trước đó.",
+  "intro": "Tôi là Backend Developer yêu thích việc biến bài toán thực tế thành sản phẩm có cấu trúc rõ ràng, dữ liệu tin cậy và trải nghiệm sử dụng hoàn chỉnh.",
+  "portrait": {
+    "title": "Không chỉ viết code, tôi xây cách sản phẩm vận hành.",
+    "body": "Kinh nghiệm của tôi trải dài từ Java/Spring Boot, C#/.NET và PostgreSQL đến React, cloud video, thanh toán và các hệ thống nghiệp vụ đang vận hành."
+  },
   "education": {
     "title": "Quá trình học tập",
     "body": "Nền tảng CNTT tập trung vào lập trình hướng đối tượng, cơ sở dữ liệu và phát triển web. Trong quá trình học, tôi bổ sung kinh nghiệm thực tế qua thực tập backend và các dự án cá nhân như LearnOva Online Learning Platform."

@@ -1,20 +1,20 @@
 {
   "meta": {
-    "title": "{{name}} | Fresher Backend Developer",
-    "description": "Fresher Backend Developer focused on legacy system migration, business analysis, and delivery on modern platforms."
+    "title": "{{name}} | Backend Developer",
+    "description": "Backend Developer building web products, APIs, and modernizing operational systems."
   },
   "eyebrow": "Developer Journey",
   "greeting": "Hello, I am",
-  "role": "Fresher Backend Developer",
-  "intro": "I have hands-on experience in legacy-to-modern system migration projects, focusing on business analysis, code conversion, and ensuring the new system preserves the behavior of the old one.",
+  "role": "Backend Developer",
+  "intro": "I build backend and full-stack products across APIs, data, payments, video streaming, and the analysis and modernization of operational systems.",
   "cta": {
     "projects": "View Projects",
     "cv": "Download CV"
   },
   "stats": {
-    "migrations": {
-      "value": "2",
-      "label": "System migration projects"
+    "projects": {
+      "value": "3+",
+      "label": "Product & system projects"
     },
     "personal": {
       "value": "3+",
@@ -26,17 +26,17 @@
     }
   },
   "journey": {
-    "title": "Migration journey",
-    "description": "From reading legacy source and analyzing business flows to implementing and validating the new system.",
-    "legacy": "Legacy System",
-    "analysis": "Business Analysis",
-    "migration": "Code Migration",
-    "testing": "Testing",
-    "modern": "Modern Platform"
+    "title": "How I build a product",
+    "description": "A complete process from understanding the problem to building, validating, and improving the product.",
+    "discover": "Discover",
+    "design": "Design",
+    "build": "Build",
+    "validate": "Validate",
+    "improve": "Improve"
   },
   "featured": {
     "title": "Featured projects",
-    "description": "Two real migration projects at GOLINE GLOBAL and the personal project LearnOva Online Learning Platform."
+    "description": "A new full-stack product alongside system modernization work delivered in real project environments."
   },
   "tech": {
     "title": "Featured technologies"

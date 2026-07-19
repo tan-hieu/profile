@@ -1,40 +1,40 @@
 :root {
   /* Background */
-  --background: #f8fafc;
-  --surface: #ffffff;
-  --surface-secondary: #eef2f7;
+  --background: #070a12;
+  --surface: #0e1422;
+  --surface-secondary: #151d2e;
 
   /* Text */
-  --text-primary: #0f172a;
-  --text-secondary: #64748b;
+  --text-primary: #f8fafc;
+  --text-secondary: #aeb9cc;
 
   /* Brand Colors */
-  --primary: #1e3a8a;
-  --primary-hover: #172554;
+  --primary: #7dd3fc;
+  --primary-hover: #bae6fd;
 
-  --accent: #eab308;
-  --accent-hover: #ca8a04;
+  --accent: #5eead4;
+  --accent-hover: #99f6e4;
 
   /* UI */
-  --border: #dbe3ee;
-  --success: #15803d;
+  --border: #26334a;
+  --success: #4ade80;
   --warning: #f59e0b;
-  --error: #dc2626;
-  --info: #2563eb;
+  --error: #fb7185;
+  --info: #38bdf8;
 
   /* Extra */
-  --shadow: rgba(15, 23, 42, 0.08);
-  --overlay: rgba(15, 23, 42, 0.6);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --overlay: rgba(0, 0, 0, 0.78);
 
   /* Gradient */
   --gradient-primary: linear-gradient(
     135deg,
-    #1e3a8a 0%,
-    #2563eb 55%,
-    #eab308 100%
+    #0284c7 0%,
+    #7dd3fc 52%,
+    #5eead4 100%
   );
 
-  --gradient-accent: linear-gradient(135deg, #eab308 0%, #facc15 100%);
+  --gradient-accent: linear-gradient(135deg, #0ea5e9 0%, #5eead4 100%);
 
   /* Typography */
   --font-sans: "Manrope", system-ui, sans-serif;

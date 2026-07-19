@@ -14,6 +14,7 @@ import { Container } from "@/components/common/Container";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { Reveal } from "@/components/common/Reveal";
 import { aboutStrengths, aboutTimeline } from "@/data/profile";
+import { profile } from "@/data/profile";
 
 const strengthIcons = {
   legacy: Code2,
@@ -37,6 +38,15 @@ export function AboutPage() {
           title={t("title")}
           description={t("intro")}
         />
+
+        <Reveal className="mb-12 grid overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] lg:grid-cols-[0.72fr_1.28fr]">
+          <img src={profile.avatar} alt={profile.fullName} className="aspect-[4/3] h-full min-h-72 w-full bg-[var(--surface-secondary)] object-cover lg:aspect-auto" />
+          <div className="flex flex-col justify-center p-7 sm:p-10">
+            <p className="font-mono text-sm uppercase tracking-[0.18em] text-[var(--accent)]">{profile.fullName}</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold sm:text-4xl">{t("portrait.title")}</h2>
+            <p className="mt-4 max-w-2xl text-[var(--text-secondary)]">{t("portrait.body")}</p>
+          </div>
+        </Reveal>
 
         <div className="grid gap-6 lg:grid-cols-2">
           <Reveal className="rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] p-6">

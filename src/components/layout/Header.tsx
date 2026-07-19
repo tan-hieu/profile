@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Download, Languages, Menu, Moon, Sun, X } from "lucide-react";
+import { Download, Menu, X } from "lucide-react";
 import { profile } from "@/data/profile";
 import { IconButton } from "@/components/common/IconButton";
 import { Button } from "@/components/common/Button";
 import { Container } from "@/components/common/Container";
 import { DesktopNavigation } from "@/components/layout/DesktopNavigation";
 import { cn } from "@/utils/helpers";
-import type { ThemeMode, SupportedLanguage } from "@/utils/constants";
+import { SUPPORTED_LANGUAGES, type SupportedLanguage } from "@/utils/constants";
 
 interface HeaderProps {
-  theme: ThemeMode;
   language: SupportedLanguage;
   isMobileMenuOpen: boolean;
-  onToggleTheme: () => void;
-  onToggleLanguage: () => void;
+  onChangeLanguage: (language: SupportedLanguage) => void;
   onToggleMobileMenu: () => void;
   onCloseMobileMenu: () => void;
 }
@@ -29,11 +27,9 @@ const languageLabels: Record<SupportedLanguage, string> = {
 };
 
 export function Header({
-  theme,
   language,
   isMobileMenuOpen,
-  onToggleTheme,
-  onToggleLanguage,
+  onChangeLanguage,
   onToggleMobileMenu,
   onCloseMobileMenu,
 }: HeaderProps) {
@@ -71,27 +67,20 @@ export function Header({
         <DesktopNavigation />
 
         <div className="flex items-center gap-1 sm:gap-2">
-          <IconButton
-            label={t("actions.changeLanguage")}
-            onClick={onToggleLanguage}
-            className="w-auto gap-1"
-          >
-            <Languages size={16} aria-hidden="true" />
-            <span className="text-xs font-semibold">
-              {languageLabels[language] ?? language.toUpperCase()}
-            </span>
-          </IconButton>
-
-          <IconButton
-            label={t("actions.toggleTheme")}
-            onClick={onToggleTheme}
-          >
-            {theme === "light" ? (
-              <Moon size={20} aria-hidden="true" />
-            ) : (
-              <Sun size={20} aria-hidden="true" />
-            )}
-          </IconButton>
+          <label className="relative">
+            <span className="sr-only">{t("actions.changeLanguage")}</span>
+            <select
+              value={language}
+              onChange={(event) => onChangeLanguage(event.target.value as SupportedLanguage)}
+              className="h-10 cursor-pointer appearance-none rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface)] py-2 pl-3 pr-8 text-xs font-semibold text-[var(--text-primary)] transition-colors hover:border-[var(--primary)]"
+              aria-label={t("actions.changeLanguage")}
+            >
+              {SUPPORTED_LANGUAGES.map((item) => (
+                <option key={item} value={item}>{languageLabels[item]}</option>
+              ))}
+            </select>
+            <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-[10px] text-[var(--text-secondary)]">⌄</span>
+          </label>
 
           <a
             href={profile.resumeUrl}

@@ -4,16 +4,13 @@ import { useTranslation } from "react-i18next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { MobileMenu } from "@/components/layout/MobileMenu";
-import { PageNavigation } from "@/components/layout/PageNavigation";
 import { PageTransition } from "@/components/common/PageTransition";
-import { useTheme } from "@/hooks/useTheme";
 import { useLanguage } from "@/hooks/useLanguage";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
 
 export function MainLayout() {
   const { t } = useTranslation("common");
-  const { theme, toggleTheme } = useTheme();
-  const { language, cycleLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useScrollToTop();
@@ -36,11 +33,9 @@ export function MainLayout() {
       </a>
 
       <Header
-        theme={theme}
         language={language}
         isMobileMenuOpen={isMobileMenuOpen}
-        onToggleTheme={toggleTheme}
-        onToggleLanguage={cycleLanguage}
+        onChangeLanguage={setLanguage}
         onToggleMobileMenu={toggleMobileMenu}
         onCloseMobileMenu={closeMobileMenu}
       />
@@ -50,7 +45,6 @@ export function MainLayout() {
         <PageTransition>
           <Outlet />
         </PageTransition>
-        <PageNavigation />
       </main>
 
       <Footer />

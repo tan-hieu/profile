@@ -1,20 +1,20 @@
 {
   "meta": {
-    "title": "{{name}} | Fresher Backend Developer",
-    "description": "Fresher Backend Developer chuyên migration hệ thống legacy, phân tích nghiệp vụ và chuyển đổi sang nền tảng hiện đại."
+    "title": "{{name}} | Backend Developer",
+    "description": "Backend Developer phát triển sản phẩm web, API và tham gia hiện đại hóa hệ thống."
   },
   "eyebrow": "Developer Journey",
   "greeting": "Xin chào, tôi là",
-  "role": "Fresher Backend Developer",
-  "intro": "Tôi có kinh nghiệm tham gia các dự án migration hệ thống cũ sang nền tảng hiện đại, tập trung vào phân tích nghiệp vụ, chuyển đổi code và đảm bảo hệ thống mới giữ đúng hành vi cũ.",
+  "role": "Backend Developer",
+  "intro": "Tôi xây dựng sản phẩm backend và full-stack, từ thiết kế API, dữ liệu, thanh toán, video streaming đến phân tích và hiện đại hóa hệ thống đang vận hành.",
   "cta": {
     "projects": "Xem dự án",
     "cv": "Tải CV"
   },
   "stats": {
-    "migrations": {
-      "value": "2",
-      "label": "Dự án migration hệ thống"
+    "projects": {
+      "value": "3+",
+      "label": "Dự án sản phẩm & hệ thống"
     },
     "personal": {
       "value": "3+",
@@ -26,17 +26,17 @@
     }
   },
   "journey": {
-    "title": "Hành trình migration",
-    "description": "Từ việc đọc source legacy, phân tích luồng nghiệp vụ đến triển khai và kiểm chứng hệ thống mới.",
-    "legacy": "Legacy System",
-    "analysis": "Business Analysis",
-    "migration": "Code Migration",
-    "testing": "Testing",
-    "modern": "Modern Platform"
+    "title": "Cách tôi phát triển một sản phẩm",
+    "description": "Một quy trình xuyên suốt từ hiểu bài toán đến xây dựng, kiểm chứng và cải tiến sản phẩm.",
+    "discover": "Hiểu bài toán",
+    "design": "Thiết kế giải pháp",
+    "build": "Xây dựng",
+    "validate": "Kiểm chứng",
+    "improve": "Cải tiến"
   },
   "featured": {
     "title": "Dự án nổi bật",
-    "description": "Hai dự án migration thực tế tại GOLINE GLOBAL và dự án cá nhân LearnOva Online Learning Platform."
+    "description": "Sản phẩm full-stack mới cùng các dự án hiện đại hóa hệ thống đã tham gia trong môi trường thực tế."
   },
   "tech": {
     "title": "Công nghệ nổi bật"
