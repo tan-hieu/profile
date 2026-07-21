@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
 import type { Project } from "@/types/project";
 import { Badge } from "@/components/common/Badge";
+import { useProjectContent } from "@/hooks/usePortfolioContent";
 
 interface ProjectCardProps {
   project: Project;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const { t } = useTranslation(["projects", "common"]);
+  const content = useProjectContent(project);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[var(--radius-lg)] border border-[var(--border)] bg-[var(--surface)] transition-all duration-200 hover:-translate-y-1.5 hover:border-[var(--primary)] hover:shadow-[0_16px_40px_var(--shadow)]">
@@ -41,11 +43,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </h2>
 
         <p className="mt-2 flex-1 text-sm text-[var(--text-secondary)]">
-          {t(`projects:items.${project.translationKey}.shortDescription`)}
+          {content?.shortDescription}
         </p>
 
         <p className="mt-3 text-xs font-medium text-[var(--text-secondary)]">
-          {project.role}
+          {content?.role}
         </p>
 
         <div className="mt-3 flex flex-wrap gap-2">

@@ -6,56 +6,22 @@ import { Container } from "@/components/common/Container";
 import { Badge } from "@/components/common/Badge";
 import { Reveal } from "@/components/common/Reveal";
 import { BeforeAfterCompare } from "@/components/projects/BeforeAfterCompare";
-import {
-  getAdjacentProjects,
-  getProjectBySlug,
-} from "@/data/projects";
+import { getAdjacentProjects, getProjectBySlug } from "@/data/projects";
 import { profile } from "@/data/profile";
-
-function readObjectValues(
-  t: (key: string, options?: { returnObjects?: boolean }) => unknown,
-  baseKey: string,
-): string[] {
-  const value = t(baseKey, { returnObjects: true });
-  if (value && typeof value === "object" && !Array.isArray(value)) {
-    return Object.values(value as Record<string, string>);
-  }
-  return [];
-}
+import { useProjectContent } from "@/hooks/usePortfolioContent";
 
 export function ProjectDetailPage() {
   const { slug } = useParams();
   const { t } = useTranslation(["projects", "common"]);
   const project = slug ? getProjectBySlug(slug) : undefined;
-  const key = project?.translationKey ?? "";
+  const content = useProjectContent(project);
   const adjacent = project
     ? getAdjacentProjects(project.slug)
     : { previous: null, next: null };
 
-  const problems = project
-    ? readObjectValues(t, `items.${key}.problems`)
-    : [];
-  const goals = project ? readObjectValues(t, `items.${key}.goals`) : [];
-  const responsibilities = project
-    ? readObjectValues(t, `items.${key}.responsibilities`)
-    : [];
-  const highlights = project
-    ? readObjectValues(t, `items.${key}.highlights`)
-    : [];
-  const challenges = project
-    ? readObjectValues(t, `items.${key}.challenges`)
-    : [];
-  const solutions = project
-    ? readObjectValues(t, `items.${key}.solutions`)
-    : [];
-  const results = project ? readObjectValues(t, `items.${key}.results`) : [];
-  const learnings = project
-    ? readObjectValues(t, `items.${key}.learnings`)
-    : [];
-
-  if (!project) {
+  if (!project || !content) {
     return (
-        <>
+      <>
         <Seo
           title={t("common:notFound.title")}
           description={t("common:notFound.description")}
@@ -71,17 +37,17 @@ export function ProjectDetailPage() {
             {t("common:actions.viewProjects")}
           </Link>
         </Container>
-        </>
+      </>
     );
   }
 
   const { previous, next } = adjacent;
 
   return (
-      <>
+    <>
       <Seo
         title={`${project.title} | ${profile.fullName}`}
-        description={t(`items.${key}.shortDescription`)}
+        description={content.shortDescription}
       />
 
       <section className="relative overflow-hidden border-b border-[var(--border)] bg-[var(--surface)]">
@@ -99,10 +65,10 @@ export function ProjectDetailPage() {
               {project.title}
             </h1>
             <p className="mt-4 max-w-2xl text-[var(--text-secondary)]">
-              {t(`items.${key}.shortDescription`)}
+              {content.shortDescription}
             </p>
             <p className="mt-4 text-sm font-medium text-[var(--primary)]">
-              {t(`items.${key}.role`)}
+              {content.role}
             </p>
           </div>
           <img
@@ -119,7 +85,7 @@ export function ProjectDetailPage() {
             {t("sections.overview")}
           </h2>
           <p className="mt-3 max-w-3xl text-[var(--text-secondary)]">
-            {t(`items.${key}.overview`)}
+            {content.overview}
           </p>
         </Reveal>
 
@@ -128,7 +94,7 @@ export function ProjectDetailPage() {
             {t("sections.context")}
           </h2>
           <p className="mt-3 max-w-3xl text-[var(--text-secondary)]">
-            {t(`items.${key}.context`)}
+            {content.context}
           </p>
         </Reveal>
 
@@ -145,7 +111,7 @@ export function ProjectDetailPage() {
               {t("sections.problems")}
             </h2>
             <ul className="mt-4 space-y-2">
-              {problems.map((item) => (
+              {content.problems.map((item) => (
                 <li key={item} className="text-sm text-[var(--text-secondary)]">
                   • {item}
                 </li>
@@ -157,7 +123,7 @@ export function ProjectDetailPage() {
               {t("sections.goals")}
             </h2>
             <ul className="mt-4 space-y-2">
-              {goals.map((item) => (
+              {content.goals.map((item) => (
                 <li key={item} className="text-sm text-[var(--text-secondary)]">
                   • {item}
                 </li>
@@ -171,7 +137,7 @@ export function ProjectDetailPage() {
             {t("sections.architecture")}
           </h2>
           <p className="mt-3 max-w-3xl text-sm text-[var(--text-secondary)]">
-            {t(`items.${key}.architectureDescription`)}
+            {content.architectureDescription}
           </p>
           <div className="mt-6 flex flex-col gap-3">
             {project.architectureLayers.map((layer, index) => (
@@ -193,15 +159,15 @@ export function ProjectDetailPage() {
             {t("sections.process")}
           </h2>
           <ol className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {project.processSteps.map((step, index) => (
+            {content.processSteps.map((step, index) => (
               <li
-                key={step.id}
+                key={`${project.processStepIds[index] ?? index}-${step}`}
                 className="rounded-[var(--radius-md)] border border-[var(--border)] bg-[var(--surface-secondary)] p-4"
               >
                 <span className="font-mono text-xs text-[var(--primary)]">
                   0{index + 1}
                 </span>
-                <p className="mt-2 text-sm font-medium">{t(step.labelKey)}</p>
+                <p className="mt-2 text-sm font-medium">{step}</p>
               </li>
             ))}
           </ol>
@@ -225,10 +191,10 @@ export function ProjectDetailPage() {
             {t("sections.scope")}
           </h2>
           <p className="mt-3 font-mono text-sm text-[var(--text-secondary)]">
-            {t(`items.${key}.scope`)}
+            {content.scope}
           </p>
           <ul className="mt-4 space-y-2">
-            {responsibilities.map((item) => (
+            {content.responsibilities.map((item) => (
               <li key={item} className="text-sm text-[var(--text-secondary)]">
                 • {item}
               </li>
@@ -238,9 +204,9 @@ export function ProjectDetailPage() {
 
         <div className="grid gap-8 lg:grid-cols-3">
           {[
-            { title: t("sections.challenges"), items: challenges },
-            { title: t("sections.solutions"), items: solutions },
-            { title: t("sections.results"), items: results },
+            { title: t("sections.challenges"), items: content.challenges },
+            { title: t("sections.solutions"), items: content.solutions },
+            { title: t("sections.results"), items: content.results },
           ].map((block) => (
             <Reveal key={block.title}>
               <h2 className="font-display text-xl font-semibold">{block.title}</h2>
@@ -258,7 +224,7 @@ export function ProjectDetailPage() {
         <Reveal>
           <h2 className="font-display text-2xl font-semibold">Highlights</h2>
           <ul className="mt-4 space-y-2">
-            {highlights.map((item) => (
+            {content.highlights.map((item) => (
               <li key={item} className="text-sm text-[var(--text-secondary)]">
                 • {item}
               </li>
@@ -271,7 +237,7 @@ export function ProjectDetailPage() {
             {t("sections.learnings")}
           </h2>
           <ul className="mt-4 space-y-2">
-            {learnings.map((item) => (
+            {content.learnings.map((item) => (
               <li key={item} className="text-sm text-[var(--text-secondary)]">
                 • {item}
               </li>
@@ -312,6 +278,6 @@ export function ProjectDetailPage() {
           ) : null}
         </nav>
       </Container>
-      </>
+    </>
   );
 }

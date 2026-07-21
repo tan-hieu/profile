@@ -1,3 +1,9 @@
+/** Toàn bộ nội dung kinh nghiệm — sửa trực tiếp tại đây. */
+export interface ExperienceContent {
+  summary: string;
+  responsibilities: string[];
+}
+
 export interface Experience {
   id: string;
   company: string;
@@ -5,7 +11,6 @@ export interface Experience {
   startDate: string;
   endDate: string;
   location?: string;
-  /** i18n keys for responsibilities */
-  responsibilityKeys: string[];
   technologies: string[];
+  content: ExperienceContent;
 }
