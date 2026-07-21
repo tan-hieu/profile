@@ -7,7 +7,7 @@ export const profile: Profile = {
   location: "Vietnam",
   email: "dtanhieu123@gmail.com",
   phone: undefined,
-  avatar: "/images/avatar-placeholder.svg",
+  avatar: "/images/avatar-placeholder.jpg",
   resumeUrl: "/resume/cv-placeholder.pdf",
   githubUrl: "https://github.com/tan-hieu",
   linkedinUrl: "https://www.linkedin.com/in/%C4%91o%C3%A0n-t%E1%BA%A5n-hi%E1%BA%BFu-9a9213401/?skipRedirect=true",
